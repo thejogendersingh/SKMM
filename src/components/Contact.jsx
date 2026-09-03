@@ -20,10 +20,10 @@ const Contact = () => {
     <section id="contact" className="py-10 md:py-14 bg-primaryNavy relative border-t border-highlightBlue/20">
       <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
         <div className="text-center mb-14">
-          <span className="text-highlightBlue font-extrabold tracking-widest text-[11px] uppercase mb-2 block">
+          <span className="text-highlightBlue font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px]">
             GET IN TOUCH
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-[36px] font-extrabold text-pureWhite mb-4 tracking-tight leading-tight">
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight leading-tight text-white">
             Let's Discuss Your MBBS Journey
           </h2>
           <p className="text-sm text-lightBlueGrey leading-relaxed font-medium max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ const Contact = () => {
               {/* Decorative blur */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-highlightBlue/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
-              <h3 className="text-2xl font-bold mb-8 relative z-10 text-pureWhite">Contact Information</h3>
+              <h3 className="text-2xl font-medium mb-8 relative z-10 text-pureWhite">Contact Information</h3>
               
               <div className="space-y-8 relative z-10">
                 <a href="tel:+919649637111" className="flex items-start gap-4 hover:text-highlightBlue transition-colors">
@@ -103,7 +103,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="bg-premiumBlue rounded-lg p-8 md:p-10 shadow-xl border border-highlightBlue/30 h-full"
             >
-              <h3 className="text-xl font-bold text-pureWhite mb-8">Request Free Counselling</h3>
+              <h3 className="text-xl font-medium text-pureWhite mb-8">Request Free Counselling</h3>
               
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
     <section id="why-us" className="section-padding bg-offWhite">
       <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
         <div className="text-center mb-16">
-          <h2 className="section-title">Why Students & Parents Choose SKMM</h2>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Why Students & Parents Choose SKMM</h2>
           <p className="section-subtitle">We don't just secure admissions; we build careers through transparent, end-to-end guidance.</p>
         </div>
 
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
               <div className="w-16 h-16 rounded-lg bg-blue-50 flex items-center justify-center text-medicalBlue mb-6 group-hover:bg-medicalBlue group-hover:text-white transition-colors duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-navy-900 mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-medium text-navy-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600 line-clamp-2">{feature.desc}</p>
             </motion.div>
           ))}

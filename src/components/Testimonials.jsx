@@ -33,10 +33,10 @@ const Testimonials = () => {
   const rowWidth = 3240; 
 
   return (
-    <section id="testimonials" className="py-16 md:py-20 bg-[#f8fafc] relative border-t border-gray-100 overflow-hidden font-sans">
-      <div className="container mx-auto px-4 max-w-[1440px] relative z-10 mb-14">
+    <section id="testimonials" className="py-12 md:py-16 bg-[#f8fafc] relative border-t border-gray-100 overflow-hidden font-sans">
+      <div className="container mx-auto px-4 max-w-[1440px] relative z-10 mb-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#111827] mb-4 tracking-tight">
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight text-gray-900">
             Our Successful Students
           </h2>
           <p className="text-[16px] text-gray-600 leading-relaxed font-medium">

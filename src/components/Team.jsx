@@ -28,7 +28,7 @@ const Team = () => {
     <section className="section-padding bg-offWhite">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="section-title">Meet the SKMM Team</h2>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Meet the SKMM Team</h2>
           <p className="section-subtitle">Dedicated professionals committed to making your MBBS dream a reality.</p>
         </div>
 
@@ -50,7 +50,7 @@ const Team = () => {
                 />
               </div>
               <div className="pt-6 px-6 relative">
-                <h3 className="text-xl font-bold text-navy-900 mb-1">{member.name}</h3>
+                <h3 className="text-xl font-medium text-navy-900 mb-1">{member.name}</h3>
                 <p className="text-primaryRed font-medium text-sm mb-3">{member.role}</p>
                 <p className="text-gray-500 text-sm mb-4">{member.expert}</p>
                 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IndianRupee, Clock, GraduationCap, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { IndianRupee, Clock, GraduationCap, ArrowRight, ArrowUpRight, Banknote } from 'lucide-react';
 import imgRussia from '../assets/Kremlin Moscow.jpg';
 import imgKazakhstan from '../assets/Astana,Kazakistan.jpg';
 import imgGeorgia from '../assets/Terry College Of Business _ University of Georgia.jpg';
@@ -16,7 +16,7 @@ const Destinations = () => {
       badge: "Most Popular",
       badgeColor: "bg-emerald-500",
       desc: "NMC-recognized universities with strong clinical training.",
-      fees: "₹18-35 Lakhs",
+      fees: "$3,030 - $6,380/yr",
       duration: "6 Years",
       eligibility: "45-50% PCB • NEET Qualified",
       tags: ["NMC Approved", "WHO Listed", "Affordable Fees"],
@@ -31,7 +31,7 @@ const Destinations = () => {
       badge: "Indian Friendly",
       badgeColor: "bg-purple-600",
       desc: "Affordable MBBS with English-medium programs.",
-      fees: "₹18-30 Lakhs",
+      fees: "$4,600 - $7,500/yr",
       duration: "5+1 Years*",
       eligibility: "45-50% PCB • NEET Qualified",
       tags: ["Indian Food", "Large Community", "Affordable"],
@@ -46,7 +46,7 @@ const Destinations = () => {
       badge: "Trending",
       badgeColor: "bg-orange-500",
       desc: "European-standard curriculum with advanced infrastructure.",
-      fees: "₹35-55 Lakh",
+      fees: "$6,500 - $9,500/yr",
       duration: "6 Years",
       eligibility: "40-50% PCB • NEET Qualified",
       tags: ["English Medium", "EU Standards", "Safe Country"],
@@ -61,7 +61,7 @@ const Destinations = () => {
       badge: "Budget Pick",
       badgeColor: "bg-blue-500",
       desc: "English medium universities with affordable tuition fees and modern facilities.",
-      fees: "₹15-25 Lakh",
+      fees: "$3,900 - $4,300/yr",
       duration: "5+1 Years*",
       eligibility: "40-50% PCB • NEET Qualified",
       tags: ["Low Cost", "English Medium", "NMC Approved"],
@@ -76,7 +76,7 @@ const Destinations = () => {
       badge: "Lowest Fees",
       badgeColor: "bg-red-500",
       desc: "Budget-friendly medical education for Indian students.",
-      fees: "₹16-25 Lakh",
+      fees: "$3,500 - $6,000/yr",
       duration: "6 Years",
       eligibility: "40-50% PCB • NEET Qualified",
       tags: ["Lowest Fees", "Good Climate", "Safe for Students"],
@@ -106,17 +106,15 @@ const Destinations = () => {
       <div className="container mx-auto px-4 lg:px-8 max-w-[1440px]">
         
         {/* Header Section */}
-        <div className="text-center mb-14">
-          <p className="text-[15px] font-bold text-gray-900 uppercase tracking-widest mb-3">
+        <div className="text-center mb-10 md:mb-12">
+          <p className="text-[12px] sm:text-[13px] font-bold text-gray-600 uppercase tracking-widest mb-2">
             STUDY DESTINATIONS
           </p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e2433] mb-4 tracking-tight">
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
             Countries We Offer for MBBS Abroad
           </h2>
-          <p className="text-[#64748b] max-w-3xl mx-auto text-[17px] leading-relaxed font-medium">
-            As a trusted consultant for MBBS in abroad and one of the leading overseas MBBS consultants,
-            SMMM Consultancy helps students choose the right destination based on their budget, career goals, and
-            NMC guidelines.
+          <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-xl mx-auto">
+            We help you choose the perfect medical university abroad, tailored to your budget, career goals, and NMC guidelines.
           </p>
         </div>
 
@@ -168,11 +166,11 @@ const Destinations = () => {
                   {/* Fees */}
                   <div className="flex items-start gap-2.5">
                     <div className="mt-0.5 text-emerald-500 opacity-90">
-                      <IndianRupee size={16} strokeWidth={3} />
+                      <Banknote size={16} strokeWidth={3} />
                     </div>
                     <div className="flex flex-col">
                       <span className="text-[15px] font-bold text-gray-900 leading-tight mb-0.5">{dest.fees}</span>
-                      <span className="text-[13px] text-gray-500 font-medium leading-none">Total Fees</span>
+                      <span className="text-[13px] text-gray-500 font-medium leading-none">Total Package</span>
                     </div>
                   </div>
 
@@ -247,7 +245,7 @@ const Destinations = () => {
             </div>
           </div>
           <a 
-            href="#contact" 
+            href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
             className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-lg font-bold text-[15px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all shadow-md uppercase tracking-wide text-center"
           >
             Get Free Counselling

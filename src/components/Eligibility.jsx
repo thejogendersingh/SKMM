@@ -14,7 +14,7 @@ const Eligibility = () => {
     <section className="section-padding bg-white">
       <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
         <div className="text-center mb-12">
-          <h2 className="section-title">Are You Eligible for MBBS Abroad?</h2>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Are You Eligible for MBBS Abroad?</h2>
           <p className="section-subtitle">Basic requirements for Indian students applying for medical universities abroad.</p>
         </div>
 
@@ -31,7 +31,7 @@ const Eligibility = () => {
               <div className="w-12 h-12 rounded-full bg-blue-100 text-medicalBlue flex items-center justify-center mb-4">
                 {item.icon}
               </div>
-              <h3 className="font-bold text-navy-900 text-lg mb-2">{item.title}</h3>
+              <h3 className="font-medium text-navy-900 text-lg mb-2">{item.title}</h3>
               <p className="text-gray-600 text-sm">{item.desc}</p>
             </motion.div>
           ))}
@@ -44,7 +44,7 @@ const Eligibility = () => {
               <strong>Note:</strong> Eligibility requirements may vary based on country or specific university. Always verify the latest applicable rules before admission.
             </p>
           </div>
-          <a href="#contact" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm shadow-sm">
+          <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm shadow-sm">
             Check My Eligibility
           </a>
         </div>

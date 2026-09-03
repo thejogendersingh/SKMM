@@ -15,7 +15,7 @@ const EducationalInfo = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="section-title">Why Study MBBS Abroad?</h2>
+              <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Why Study MBBS Abroad?</h2>
               <p className="text-gray-600 text-lg">
                 Studying MBBS abroad is a practical and strategic choice for many Indian medical aspirants who face high competition and limited seats in India.
               </p>
@@ -66,7 +66,7 @@ const EducationalInfo = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6">
               <BrainCircuit size={32} className="text-medicalBlue" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">We Help You Choose, Not Just Apply</h2>
+            <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">We Help You Choose, Not Just Apply</h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
               SKMM Consultancy considers multiple factors to recommend the perfect university for you. We treat every student's profile uniquely.
             </p>

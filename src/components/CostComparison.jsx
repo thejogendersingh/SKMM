@@ -14,7 +14,7 @@ const CostComparison = () => {
     <section className="section-padding bg-offWhite">
       <div className="container mx-auto px-4 md:px-8 max-w-5xl">
         <div className="text-center mb-12">
-          <h2 className="section-title">Understand the Cost of MBBS Abroad</h2>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Understand the Cost of MBBS Abroad</h2>
           <p className="section-subtitle">A transparent breakdown of approximate yearly expenses to help you plan your budget effectively.</p>
         </div>
 
@@ -28,7 +28,7 @@ const CostComparison = () => {
               transition={{ delay: idx * 0.1, duration: 0.4 }}
               className="bg-white rounded-lg p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all"
             >
-              <h3 className="text-xl font-bold text-navy-900 mb-4 pb-4 border-b border-gray-100 flex items-center justify-between">
+              <h3 className="text-xl font-medium text-navy-900 mb-4 pb-4 border-b border-gray-100 flex items-center justify-between">
                 {cost.country}
                 <span className="text-xs bg-blue-50 text-medicalBlue px-2 py-1 rounded-md">{cost.duration}</span>
               </h3>
@@ -57,9 +57,9 @@ const CostComparison = () => {
             viewport={{ once: true }}
             className="bg-gradient-to-br from-primaryRed to-red-900 rounded-lg p-6 shadow-md text-white flex flex-col justify-center items-center text-center"
           >
-            <h3 className="text-xl font-bold mb-3">Need Exact Fee Details?</h3>
+            <h3 className="text-xl font-medium mb-3">Need Exact Fee Details?</h3>
             <p className="text-sm text-red-100 mb-6">Get the latest fee structures of top universities directly to your WhatsApp.</p>
-            <a href="#contact" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
+            <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
               Get Latest Fee Details
             </a>
           </motion.div>

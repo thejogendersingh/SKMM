@@ -40,10 +40,10 @@ const FAQ = () => {
     <section id="faqs" className="py-10 md:py-14 bg-[#f0f5fa] border-t border-gray-100">
       <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
         <div className="text-center mb-14">
-          <span className="text-gray-900 font-bold tracking-widest text-[14px] uppercase mb-3 block">
+          <span className="text-gray-900 font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px]">
             FAQ
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight text-gray-900">
             Frequently Asked Questions
           </h2>
           <p className="text-[16px] text-gray-600 leading-relaxed font-medium">
@@ -61,7 +61,7 @@ const FAQ = () => {
                 onClick={() => setOpenIdx(openIdx === idx ? -1 : idx)}
                 className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
               >
-                <span className={`font-bold text-[17px] transition-colors ${openIdx === idx ? 'text-[#30AFFF]' : 'text-gray-800'}`}>
+                <span className={`font-bold text-[17px] transition-colors ${openIdx === idx ? 'text-[#1e2433]' : 'text-gray-800'}`}>
                   {faq.q}
                 </span>
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${openIdx === idx ? 'bg-[#30AFFF]/10' : 'bg-gray-100'}`}>
@@ -90,11 +90,20 @@ const FAQ = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12 bg-white rounded-lg p-8 border border-gray-200 shadow-sm">
-          <p className="text-gray-800 font-bold mb-4 text-[16px]">Still have questions about studying abroad?</p>
-          <a href="#contact" className="inline-flex items-center justify-center bg-[#121935] text-white px-8 py-3.5 rounded-lg font-bold text-[15px] hover:bg-[#1e2433] transition-colors shadow-md">
-            Contact Our Counselling Team
-          </a>
+        <div className="mt-12 md:mt-14 bg-[#1e2433] rounded-2xl p-5 md:px-10 md:py-6 flex flex-col md:flex-row items-center justify-between gap-5 shadow-xl relative overflow-hidden w-full max-w-[1050px] mx-auto border border-slate-700/50">
+          {/* Subtle background decoration */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#30AFFF]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+          
+          <div className="relative z-10 text-center md:text-left flex-1">
+            <h3 className="text-white text-[18px] md:text-[20px] font-semibold mb-1.5">Still have questions about studying abroad?</h3>
+            <p className="text-gray-300 text-[13px] md:text-[14px] leading-relaxed m-0">Our expert counselors are here to help you clear all your doubts and guide you properly.</p>
+          </div>
+          
+          <div className="relative z-10 shrink-0 w-full md:w-auto">
+            <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white px-8 py-3.5 md:py-3.5 rounded-lg font-medium text-[14px] md:text-[15px] hover:-translate-y-0.5 transition-all shadow-[0_4px_15px_rgba(48,175,255,0.3)] hover:shadow-[0_6px_20px_rgba(48,175,255,0.4)]">
+              Contact Our Counselling Team
+            </a>
+          </div>
         </div>
       </div>
     </section>

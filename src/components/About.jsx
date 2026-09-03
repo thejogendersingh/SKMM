@@ -38,66 +38,66 @@ const About = () => {
                 />
               </motion.div>
 
-              {/* Floating Top Left Box - Sky Blue */}
+              {/* Floating Top Left Box - Sky Blue (Scaled Down) */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="absolute top-10 -left-2 sm:-left-12 bg-[#30AFFF] rounded-lg py-3 px-4 sm:py-4 sm:px-6 flex items-center gap-3 sm:gap-4 shadow-[0_20px_40px_rgba(48,175,255,0.3)] z-20 max-w-[95%]"
+                className="absolute top-10 -left-2 sm:-left-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-lg py-2.5 px-3 sm:py-3 sm:px-4 flex items-center gap-2 sm:gap-3 shadow-[0_15px_30px_rgba(48,175,255,0.3)] z-20 max-w-[90%]"
               >
-                <div className="w-10 h-10 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center text-[#30AFFF] shrink-0">
-                  <Phone size={18} fill="currentColor" strokeWidth={2.5} />
+                <div className="w-8 h-8 sm:w-9 sm:h-9 bg-white rounded-full flex items-center justify-center text-[#30AFFF] shrink-0">
+                  <Phone size={14} fill="currentColor" strokeWidth={2.5} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[11px] sm:text-[12px] font-medium text-white/90 mb-0.5">Call For Consultation</span>
-                  <span className="text-[15px] sm:text-[17px] font-bold text-white tracking-wide leading-none">+91 96496 37111</span>
+                  <span className="text-[9px] sm:text-[10px] font-medium text-white/90 mb-0.5">Call For Consultation</span>
+                  <span className="text-[13px] sm:text-[14px] font-bold text-white tracking-wide leading-none">+91 96496 37111</span>
                 </div>
               </motion.div>
 
-              {/* Floating Bottom Left Card - White */}
+              {/* Floating Bottom Left Card - White (Scaled Down) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="absolute -bottom-8 -left-2 sm:-left-8 bg-white rounded-lg p-5 shadow-2xl z-20 w-[200px] sm:w-[220px] border border-gray-100"
+                className="absolute -bottom-6 -left-2 sm:-left-6 bg-white rounded-lg p-3 sm:p-4 shadow-2xl z-20 w-[160px] sm:w-[170px] border border-gray-100"
               >
-                <div className="text-center pb-3 border-b border-gray-100 flex items-center gap-2 justify-center">
-                  <span className="text-[12px] sm:text-[13px] font-bold text-gray-800">Served Students</span>
+                {/* Overlapping Plane Icon (Attached to Card) */}
+                <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-full flex items-center justify-center text-white shadow-lg z-30">
+                  <Send size={14} className="-translate-x-0.5 translate-y-0.5" strokeWidth={2.5} />
+                </div>
+
+                <div className="text-center pb-2 border-b border-gray-100 flex items-center gap-2 justify-center mt-1">
+                  <span className="text-[10px] sm:text-[11px] font-bold text-gray-800">Served Students</span>
                 </div>
                 
-                <div className="py-4 flex flex-col items-center">
+                <div className="py-3 flex flex-col items-center">
                   {/* Arc gauge simulation fixed so text is not cut off */}
-                  <div className="relative w-28 h-16 flex justify-center">
-                    <div className="absolute top-0 w-28 h-14 overflow-hidden">
-                      <div className="w-28 h-28 rounded-full border-[7px] border-[#30AFFF] border-b-transparent border-r-transparent rotate-45"></div>
+                  <div className="relative w-24 h-12 flex justify-center">
+                    <div className="absolute top-0 w-24 h-12 overflow-hidden">
+                      <div className="w-24 h-24 rounded-full border-[5px] border-[#30AFFF] border-b-transparent border-r-transparent rotate-45"></div>
                     </div>
-                    <div className="relative mt-5 flex flex-col items-center z-10">
-                      <span className="text-[10px] text-gray-500 font-medium leading-tight">Successful</span>
-                      <span className="text-lg font-black text-gray-900 leading-none mt-1">5,000+</span>
+                    <div className="relative mt-4 flex flex-col items-center z-10">
+                      <span className="text-[8px] text-gray-500 font-medium leading-tight">Successful</span>
+                      <span className="text-[15px] font-black text-gray-900 leading-none mt-1">1,000+</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-2 flex items-center justify-center gap-2">
-                  <div className="flex -space-x-2">
-                    <div className="w-5 h-5 rounded-full bg-blue-50 border border-white flex items-center justify-center text-[9px]">🇷🇺</div>
-                    <div className="w-5 h-5 rounded-full bg-emerald-50 border border-white flex items-center justify-center text-[9px]">🇰🇿</div>
-                    <div className="w-5 h-5 rounded-full bg-blue-50 border border-white flex items-center justify-center text-[8px] font-bold text-[#30AFFF]">+</div>
+                <div className="pt-1 flex items-center justify-center gap-1.5">
+                  <div className="flex -space-x-1.5">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Russia" className="w-4 h-4 rounded-full border border-white object-cover shadow-sm" />
+                    <img src="https://flagcdn.com/w40/kz.png" alt="Kazakhstan" className="w-4 h-4 rounded-full border border-white object-cover shadow-sm" />
+                    <div className="w-4 h-4 rounded-full bg-blue-50 border border-white flex items-center justify-center text-[7px] font-bold text-[#30AFFF]">+</div>
                   </div>
-                  <span className="text-[11px] font-bold text-gray-800">10 Countries</span>
+                  <span className="text-[9px] font-bold text-gray-800">5 Countries</span>
                 </div>
                 
-                <div className="text-center mt-3">
-                  <span className="text-[9px] sm:text-[10px] text-gray-500 font-medium">We are serving for 10+ Years</span>
+                <div className="text-center mt-2.5">
+                  <span className="text-[8px] text-gray-500 font-medium">We are serving for 3+ Years</span>
                 </div>
               </motion.div>
-
-              {/* Overlapping Plane Icon */}
-              <div className="absolute top-2/3 -left-3 sm:-left-6 w-10 h-10 sm:w-12 sm:h-12 bg-[#30AFFF] rounded-full flex items-center justify-center text-white shadow-lg z-30 transform -translate-y-1/2">
-                <Send size={16} className="-translate-x-0.5 translate-y-0.5" strokeWidth={2.5} />
-              </div>
             </div>
           </div>
           
@@ -158,8 +158,8 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              href="#contact" 
-              className="inline-block mt-4 px-10 py-4 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-full font-bold text-[15px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide"
+              href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
+              className="inline-block mt-4 px-8 py-3 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-full font-bold text-[14px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide"
             >
               Get Started
             </motion.a>

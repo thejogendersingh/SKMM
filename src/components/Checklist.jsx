@@ -20,11 +20,11 @@ const Checklist = () => {
         <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-2 bg-navy-900 text-white p-10 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4">Documents You May Need</h2>
+              <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">Documents You May Need</h2>
               <p className="text-blue-100 mb-8">
                 Keep these documents ready to ensure a smooth admission and visa process.
               </p>
-              <a href="#contact" className="btn-primary inline-block text-center mt-auto">
+              <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="btn-primary inline-block text-center mt-auto">
                 Get Detailed Checklist
               </a>
             </div>

@@ -32,7 +32,7 @@ const FloatingEnquiry = () => {
           
           {/* Header */}
           <div className="bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] p-4 text-white relative">
-            <h3 className="font-bold text-lg">Enquiry Now</h3>
+            <h3 className="font-medium text-lg">Enquiry Now</h3>
             <p className="text-[13px] text-blue-100 mt-1 leading-tight">Fill the form and we'll get back to you instantly.</p>
             <button 
               onClick={() => setIsOpen(false)}
@@ -43,10 +43,20 @@ const FloatingEnquiry = () => {
           </div>
 
           {/* Form */}
-          <form className="p-5 flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); setIsOpen(false); }}>
+          <form className="p-5 flex flex-col gap-4" onSubmit={(e) => { 
+    e.preventDefault(); 
+    const name = e.target.fullName.value;
+    const phone = e.target.phone.value;
+    const email = e.target.email.value;
+    const dest = e.target.destination.value;
+    const text = `Hello SKMM Consultancy,\nI have an enquiry.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nDestination: ${dest}`;
+    window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
+    setIsOpen(false);
+  }}>
             <div>
               <input 
                 type="text" 
+                name="fullName"
                 placeholder="Full Name" 
                 required
                 className="w-full bg-gray-50 border border-gray-200 text-gray-800 text-[14px] rounded-lg px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all"
@@ -55,6 +65,7 @@ const FloatingEnquiry = () => {
             <div>
               <input 
                 type="tel" 
+                name="phone"
                 placeholder="Phone Number" 
                 required
                 className="w-full bg-gray-50 border border-gray-200 text-gray-800 text-[14px] rounded-lg px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all"
@@ -63,12 +74,13 @@ const FloatingEnquiry = () => {
             <div>
               <input 
                 type="email" 
+                name="email"
                 placeholder="Email Address" 
                 className="w-full bg-gray-50 border border-gray-200 text-gray-800 text-[14px] rounded-lg px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all"
               />
             </div>
             <div>
-              <select className="w-full bg-gray-50 border border-gray-200 text-gray-800 text-[14px] rounded-lg px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all cursor-pointer">
+              <select name="destination" className="w-full bg-gray-50 border border-gray-200 text-gray-800 text-[14px] rounded-lg px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all cursor-pointer">
                 <option value="">Select Destination</option>
                 <option value="russia">MBBS in Russia</option>
                 <option value="kazakhstan">MBBS in Kazakhstan</option>
@@ -79,7 +91,7 @@ const FloatingEnquiry = () => {
             
             <button 
               type="submit"
-              className="w-full bg-[#30AFFF] text-white rounded-lg py-3 font-bold text-[14px] flex items-center justify-center gap-2 hover:bg-[#1D4ED8] transition-colors shadow-md shadow-[#30AFFF]/30 mt-2"
+              className="w-full bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-lg py-3 font-bold text-[14px] flex items-center justify-center gap-2 hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors shadow-md shadow-[#30AFFF]/30 mt-2"
             >
               Submit <Send size={16} />
             </button>

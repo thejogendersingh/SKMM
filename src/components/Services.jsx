@@ -19,7 +19,7 @@ const Services = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <h2 className="section-title">Complete Support, From Counselling to Campus</h2>
+            <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Complete Support, From Counselling to Campus</h2>
             <p className="section-subtitle ml-0 text-left">We provide comprehensive services to ensure you only focus on your studies while we handle the rest.</p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Services = () => {
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-medicalBlue mb-4 group-hover:bg-white/10 group-hover:text-white transition-colors">
                 {service.icon}
               </div>
-              <h3 className="font-bold text-lg mb-2 text-navy-900 group-hover:text-white">{service.title}</h3>
+              <h3 className="font-medium text-lg mb-2 text-navy-900 group-hover:text-white">{service.title}</h3>
               <p className="text-sm text-gray-500 group-hover:text-gray-300">{service.desc}</p>
             </motion.div>
           ))}

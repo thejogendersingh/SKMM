@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Video, Camera, Globe, Briefcase, MessageCircle } from 'lucide-react';
+import React from 'react';
+import { Phone, Mail } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
-  const [formStatus, setFormStatus] = useState('idle');
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormStatus('submitting');
-    setTimeout(() => {
-      setFormStatus('success');
-      e.target.reset();
-      setTimeout(() => setFormStatus('idle'), 5000);
-    }, 1500);
+    const name = e.target.elements[0].value;
+    const phone = e.target.elements[1].value;
+    const email = e.target.elements[2].value;
+    const neet = e.target.elements[3].value;
+    const city = e.target.elements[4].value;
+    const message = e.target.elements[5].value;
+    const text = `Hello SKMM Consultancy,\nI have an enquiry from the website.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nNEET Score: ${neet}\nCity: ${city}\nMessage: ${message}`;
+    window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
+    e.target.reset();
   };
 
   return (
@@ -21,25 +23,21 @@ const Footer = () => {
           
           {/* Brand & Contact Col */}
           <div className="lg:w-[35%] flex flex-col">
-            <h3 className="text-2xl font-extrabold text-white mb-4 tracking-tight">SMMM CONSULTANCY</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="SKMM Consultancy Logo" className="h-12 w-auto aspect-square rounded-full object-cover" />
+              <div className="flex flex-col justify-center">
+                <span className="text-[20px] font-black text-white leading-none tracking-tight">SKMM</span>
+                <span className="text-[9px] text-[#30AFFF] font-bold tracking-widest mt-0.5">CONSULTANCY</span>
+              </div>
+            </div>
             <p className="text-gray-300 text-[13px] leading-relaxed mb-6 font-medium">
-              Established in 2013, SMMM Consultancy has helped thousands of aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
+              Established in 2021, SMMM Consultancy has helped over 1000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
             </p>
             
             <div className="flex flex-col gap-3 mb-8">
-              <div className="flex items-start gap-3">
-                <MapPin size={16} className="text-white mt-0.5 shrink-0" />
-                <span className="text-[13px] text-gray-300 font-medium leading-snug">
-                  Rajasthan HMO, India
-                </span>
-              </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-white shrink-0" />
-                <span className="text-[13px] text-gray-300 font-medium">9811696553</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone size={16} className="text-white shrink-0" />
-                <span className="text-[13px] text-gray-300 font-medium">9810805080</span>
+                <span className="text-[13px] text-gray-300 font-medium">+91 96496 37111</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-white shrink-0" />
@@ -48,11 +46,15 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-2">
-              <a href="#" className="w-8 h-8 bg-[#30AFFF] rounded-md flex items-center justify-center text-white hover:bg-[#0284c7] transition-colors"><Video size={16} /></a>
-              <a href="#" className="w-8 h-8 bg-[#30AFFF] rounded-md flex items-center justify-center text-white hover:bg-[#0284c7] transition-colors"><Camera size={16} /></a>
-              <a href="#" className="w-8 h-8 bg-[#30AFFF] rounded-md flex items-center justify-center text-white hover:bg-[#0284c7] transition-colors"><Globe size={16} /></a>
-              <a href="#" className="w-8 h-8 bg-[#30AFFF] rounded-md flex items-center justify-center text-white hover:bg-[#0284c7] transition-colors"><Briefcase size={16} /></a>
-              <a href="#" className="w-8 h-8 bg-[#30AFFF] rounded-md flex items-center justify-center text-white hover:bg-[#0284c7] transition-colors"><MessageCircle size={16} /></a>
+              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
             </div>
           </div>
 
@@ -60,7 +62,7 @@ const Footer = () => {
           <div className="lg:w-[20%]">
             <h4 className="text-[16px] font-bold mb-6 text-white tracking-wide">Quick Links</h4>
             <ul className="space-y-4">
-              {['Home', 'About Us', 'Blog', 'Disclaimer', 'Testimonial', 'Privacy Policy', 'Terms and Conditions'].map((link) => (
+              {['Home', 'About Us', 'Testimonial', 'Privacy Policy', 'Terms and Conditions'].map((link) => (
                 <li key={link}>
                   <a href={`#${link.split(' ')[0].toLowerCase()}`} className="text-gray-300 hover:text-white transition-colors text-[13px] font-medium flex items-center gap-2">
                     <span className="text-gray-400 font-bold">»</span>
@@ -90,14 +92,9 @@ const Footer = () => {
               <textarea placeholder="Message" rows="3" className="w-full bg-white text-gray-900 text-[13px] px-4 py-3 rounded resize-none focus:outline-none focus:ring-2 focus:ring-[#30AFFF]"></textarea>
               <button 
                 type="submit" 
-                disabled={formStatus === 'submitting' || formStatus === 'success'}
-                className={`w-full text-white font-bold py-3 text-[13px] uppercase tracking-wider rounded transition-colors mt-1 ${
-                  formStatus === 'success' ? 'bg-emerald-500 hover:bg-emerald-600' :
-                  formStatus === 'submitting' ? 'bg-gray-500 cursor-not-allowed' :
-                  'bg-[#30AFFF] hover:bg-[#0284c7]'
-                }`}
+                className="w-full text-white font-bold py-3 text-[13px] uppercase tracking-wider rounded transition-colors mt-1 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] hover:from-[#1D4ED8] hover:to-[#2563EB]"
               >
-                {formStatus === 'success' ? 'Request Submitted!' : formStatus === 'submitting' ? 'Submitting...' : 'SUBMIT'}
+                SUBMIT
               </button>
             </form>
           </div>
