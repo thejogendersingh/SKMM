@@ -21,20 +21,20 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
           
           {/* Left Column - Images & Floating Cards */}
-          <div className="w-full lg:w-1/2 relative mt-12 lg:mt-0 flex justify-center lg:justify-end pr-0 lg:pr-8">
+          <div className="w-full lg:w-1/2 relative mt-8 lg:mt-0 flex justify-center lg:justify-end pr-0 lg:pr-8">
             
-            <div className="relative w-full max-w-[420px] sm:max-w-[480px]">
+            <div className="relative w-full max-w-[380px] sm:max-w-[440px]">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
-                className="w-full rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-white p-3 md:p-4"
+                className="w-full rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-white p-2.5 md:p-3"
               >
                 <img 
                   src={aboutImg} 
                   alt="Medical Student Counselling" 
-                  className="w-full h-[470px] md:h-[550px] object-cover object-center rounded-lg"
+                  className="w-full h-[400px] md:h-[480px] object-cover object-center rounded-lg"
                 />
               </motion.div>
 
@@ -44,14 +44,14 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="absolute top-10 -left-2 sm:-left-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-lg py-2.5 px-3 sm:py-3 sm:px-4 flex items-center gap-2 sm:gap-3 shadow-[0_15px_30px_rgba(48,175,255,0.3)] z-20 max-w-[90%]"
+                className="absolute top-8 -left-2 sm:-left-6 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-lg py-2 px-2.5 sm:py-2.5 sm:px-3 flex items-center gap-2 sm:gap-2.5 shadow-[0_15px_30px_rgba(48,175,255,0.3)] z-20 max-w-[90%]"
               >
-                <div className="w-8 h-8 sm:w-9 sm:h-9 bg-white rounded-full flex items-center justify-center text-[#30AFFF] shrink-0">
-                  <Phone size={14} fill="currentColor" strokeWidth={2.5} />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center text-[#30AFFF] shrink-0">
+                  <Phone size={13} fill="currentColor" strokeWidth={2.5} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[9px] sm:text-[10px] font-medium text-white/90 mb-0.5">Call For Consultation</span>
-                  <span className="text-[13px] sm:text-[14px] font-bold text-white tracking-wide leading-none">+91 96496 37111</span>
+                  <span className="text-[8px] sm:text-[9px] font-medium text-white/90 mb-0.5">Call For Consultation</span>
+                  <span className="text-[12px] sm:text-[13px] font-bold text-white tracking-wide leading-none">+91 96496 37111</span>
                 </div>
               </motion.div>
 
@@ -61,58 +61,58 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="absolute -bottom-6 -left-2 sm:-left-6 bg-white rounded-lg p-3 sm:p-4 shadow-2xl z-20 w-[160px] sm:w-[170px] border border-gray-100"
+                className="absolute -bottom-5 -left-2 sm:-left-4 bg-white rounded-lg p-2.5 sm:p-3 shadow-2xl z-20 w-[150px] sm:w-[160px] border border-gray-100"
               >
                 {/* Overlapping Plane Icon (Attached to Card) */}
-                <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-full flex items-center justify-center text-white shadow-lg z-30">
-                  <Send size={14} className="-translate-x-0.5 translate-y-0.5" strokeWidth={2.5} />
+                <div className="absolute -top-3 -left-3 sm:-top-3.5 sm:-left-3.5 w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-full flex items-center justify-center text-white shadow-lg z-30">
+                  <Send size={13} className="-translate-x-0.5 translate-y-0.5" strokeWidth={2.5} />
                 </div>
 
-                <div className="text-center pb-2 border-b border-gray-100 flex items-center gap-2 justify-center mt-1">
-                  <span className="text-[10px] sm:text-[11px] font-bold text-gray-800">Served Students</span>
+                <div className="text-center pb-1.5 border-b border-gray-100 flex items-center gap-2 justify-center mt-1">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-gray-800">Served Students</span>
                 </div>
                 
-                <div className="py-3 flex flex-col items-center">
+                <div className="py-2.5 flex flex-col items-center">
                   {/* Arc gauge simulation fixed so text is not cut off */}
-                  <div className="relative w-24 h-12 flex justify-center">
-                    <div className="absolute top-0 w-24 h-12 overflow-hidden">
-                      <div className="w-24 h-24 rounded-full border-[5px] border-[#30AFFF] border-b-transparent border-r-transparent rotate-45"></div>
+                  <div className="relative w-20 h-10 flex justify-center">
+                    <div className="absolute top-0 w-20 h-10 overflow-hidden">
+                      <div className="w-20 h-20 rounded-full border-[4px] border-[#30AFFF] border-b-transparent border-r-transparent rotate-45"></div>
                     </div>
-                    <div className="relative mt-4 flex flex-col items-center z-10">
-                      <span className="text-[8px] text-gray-500 font-medium leading-tight">Successful</span>
-                      <span className="text-[15px] font-black text-gray-900 leading-none mt-1">1,000+</span>
+                    <div className="relative mt-3.5 flex flex-col items-center z-10">
+                      <span className="text-[7.5px] text-gray-500 font-medium leading-tight">Successful</span>
+                      <span className="text-[13px] font-black text-gray-900 leading-none mt-1">5,000+</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-1 flex items-center justify-center gap-1.5">
+                <div className="pt-1 flex items-center justify-center gap-1">
                   <div className="flex -space-x-1.5">
-                    <img src="https://flagcdn.com/w40/ru.png" alt="Russia" className="w-4 h-4 rounded-full border border-white object-cover shadow-sm" />
-                    <img src="https://flagcdn.com/w40/kz.png" alt="Kazakhstan" className="w-4 h-4 rounded-full border border-white object-cover shadow-sm" />
-                    <div className="w-4 h-4 rounded-full bg-blue-50 border border-white flex items-center justify-center text-[7px] font-bold text-[#30AFFF]">+</div>
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Russia" className="w-3.5 h-3.5 rounded-full border border-white object-cover shadow-sm" />
+                    <img src="https://flagcdn.com/w40/kz.png" alt="Kazakhstan" className="w-3.5 h-3.5 rounded-full border border-white object-cover shadow-sm" />
+                    <div className="w-3.5 h-3.5 rounded-full bg-blue-50 border border-white flex items-center justify-center text-[6px] font-bold text-[#30AFFF]">+</div>
                   </div>
-                  <span className="text-[9px] font-bold text-gray-800">5 Countries</span>
+                  <span className="text-[8px] font-bold text-gray-800 ml-1">5 Countries</span>
                 </div>
                 
-                <div className="text-center mt-2.5">
-                  <span className="text-[8px] text-gray-500 font-medium">We are serving for 3+ Years</span>
+                <div className="text-center mt-2">
+                  <span className="text-[7.5px] text-gray-500 font-medium">We are serving for 3+ Years</span>
                 </div>
               </motion.div>
             </div>
           </div>
           
           {/* Right Column - Content */}
-          <div className="w-full lg:w-1/2 flex flex-col items-start lg:pl-10 mt-16 lg:mt-0 relative z-20">
+          <div className="w-full lg:w-1/2 flex flex-col items-start lg:pl-10 mt-12 lg:mt-0 relative z-20">
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 mb-3"
+              className="flex items-center gap-2 mb-2.5"
             >
-              <Send size={16} className="text-[#30AFFF]" strokeWidth={2.5} />
-              <span className="text-[14px] font-bold text-white uppercase tracking-widest">About SKMM Consultancy</span>
+              <Send size={14} className="text-[#30AFFF]" strokeWidth={2.5} />
+              <span className="text-[13px] font-bold text-white uppercase tracking-widest">About SKMM Consultancy</span>
             </motion.div>
 
             <motion.h2 
@@ -120,7 +120,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-[46px] font-serif text-white leading-tight mb-4"
+              className="text-3xl md:text-[40px] font-serif text-white leading-tight mb-3"
             >
               We help Making your dream into Reality
             </motion.h2>
@@ -131,9 +131,9 @@ const About = () => {
               whileInView={{ opacity: 1, w: "auto" }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex items-center gap-1 mb-6"
+              className="flex items-center gap-1 mb-5"
             >
-              <div className="w-12 h-[2px] bg-[#30AFFF]"></div>
+              <div className="w-10 h-[2px] bg-[#30AFFF]"></div>
               <div className="w-1 h-[2px] bg-[#30AFFF]"></div>
               <div className="w-1 h-[2px] bg-[#30AFFF]"></div>
             </motion.div>
@@ -143,7 +143,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col gap-4 text-[16px] text-gray-300 mb-6 leading-relaxed font-medium"
+              className="flex flex-col gap-3.5 text-[15px] text-gray-300 mb-5 leading-relaxed font-medium"
             >
               <p>
                 SKMM Consultancy provides uniquely designed premium services for medical education abroad. As aspiring doctors dream of hands-on clinical experience, we bridge the gap by offering complete transparency, expert guidance, and end-to-end support throughout the entire journey.
@@ -159,7 +159,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
               href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
-              className="inline-block mt-4 px-8 py-3 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-full font-bold text-[14px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide"
+              className="inline-block mt-2 px-7 py-2.5 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-full font-bold text-[13px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide"
             >
               Get Started
             </motion.a>

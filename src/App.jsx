@@ -7,6 +7,7 @@ import About from './components/About';
 import Destinations from './components/Destinations';
 import Universities from './components/Universities';
 import Process from './components/Process';
+// import Services from './components/Services';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
@@ -36,17 +37,18 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans text-charcoal bg-ivoryWhite w-full overflow-x-hidden">
+    <div className="font-sans text-charcoal bg-ivoryWhite w-full">
       <Header />
       
       {currentPage === 'home' && (
-        <main>
+        <main className="overflow-x-hidden">
           <Hero />
           <TrackRecord />
           <About />
           <Destinations />
           <Universities />
           <Process />
+          {/* <Services /> */}
           <Testimonials />
           <FAQ />
         </main>

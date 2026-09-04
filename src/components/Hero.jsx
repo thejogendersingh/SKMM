@@ -134,13 +134,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Layered Clean Wave Separator */}
+      {/* Single Clean Wave Separator */}
       <div className="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" className="w-full h-[35px] md:h-[70px] block">
-          {/* Back layer with 50% opacity */}
-          <path fill="#f9fafb" fillOpacity="0.5" d="M0,40 C320,120 420,0 1440,60 L1440,100 L0,100 Z"></path>
-          {/* Front solid layer */}
-          <path fill="#f9fafb" fillOpacity="1" d="M0,70 C480,120 960,-20 1440,50 L1440,100 L0,100 Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" className="w-full h-[24px] md:h-[48px] block">
+          <path fill="#ffffff" fillOpacity="1" d="M0,70 C480,120 960,-20 1440,50 L1440,100 L0,100 Z"></path>
         </svg>
       </div>
     </section>

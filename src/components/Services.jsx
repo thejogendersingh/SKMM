@@ -1,46 +1,134 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Headphones, Search, FileSignature, FileText, PlaneTakeoff, Navigation, Building, Users } from 'lucide-react';
+import { Headphones, Building, FileSignature, Landmark, FileText, CheckCircle2 } from 'lucide-react';
 
 const Services = () => {
-  const servicesList = [
-    { icon: <Headphones size={28} />, title: "Free Counselling", desc: "Expert 1-on-1 sessions for students and parents." },
-    { icon: <Search size={28} />, title: "University Selection", desc: "Unbiased guidance to find the best fit." },
-    { icon: <FileSignature size={28} />, title: "Admission Processing", desc: "Guaranteed admission in top universities." },
-    { icon: <FileText size={28} />, title: "Documentation Assistance", desc: "Apostille, translation and notarization support." },
-    { icon: <FileText size={28} />, title: "Visa Assistance", desc: "100% visa success rate with our expert team." },
-    { icon: <PlaneTakeoff size={28} />, title: "Travel Guidance", desc: "Group departures and forex assistance." },
-    { icon: <Building size={28} />, title: "Accommodation Guidance", desc: "Safe, comfortable university hostels." },
-    { icon: <Users size={28} />, title: "Post-Arrival Support", desc: "Local support during the entire course duration." },
+  const leftServices = [
+    {
+      title: "COUNSELLING",
+      icon: <Headphones size={28} className="text-white" />,
+      desc: "We provide counselling to students interested in studying MBBS abroad. For counselling, we have a team of expert counsellors and admission advisors. Depending on the convenience of the students, counselling is provided through online as well as the offline medium. We believe that the first interaction between the students and our representatives marks the beginning of our association with our students."
+    },
+    {
+      title: "ADMISSION APPLICATION",
+      icon: <FileSignature size={28} className="text-white" />,
+      desc: "To make the admission process to the MBBS program easier and hassle-free, on behalf of the students, the team of SKMM files an application for admission to the MBBS program of the selected university at no additional cost to students. All the documentation work is taken care of by our team."
+    },
+    {
+      title: "DOCUMENTATION",
+      icon: <FileText size={28} className="text-white" />,
+      desc: "Going abroad for medical education is not a small decision. It requires lots of paperwork and documentation. Immigration documents are required to be compiled for passport and visa formalities. Further, MBBS Admission and University procedures need a number of academic documents and student's records that need to be apostilled and submitted to the University."
+    }
+  ];
+
+  const rightServices = [
+    {
+      title: "UNIVERSITY SELECTION",
+      icon: <Building size={28} className="text-white" />,
+      desc: "These countries are home to many NMC(MCI)-Approved Medical Universities that offer MBBS admission for Indian students. All these universities have different fees structure, facilities, and located in many different regions. For a student, making the right choice from so many options and selecting the best-fit can be difficult. We help students in selecting a medical University that is the best fit for them, depending on their financial means, personal preferences, the preferred medium of instruction, and academic records."
+    },
+    {
+      title: "FINANCIAL SUPPORT",
+      icon: <Landmark size={28} className="text-white" />,
+      desc: "We assist our students in getting currency exchange. At SKMM, we make sure that our students get the best possible exchange rate. We have tie-ups with various International Banks that provide the students with Forex Card and traveller's cheque at the time of departure. While medical education all over the World is very affordable, some students may require financial support to fund their MBBS program."
+    }
   ];
 
   return (
-    <section id="services" className="section-padding bg-white">
-      <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Complete Support, From Counselling to Campus</h2>
-            <p className="section-subtitle ml-0 text-left">We provide comprehensive services to ensure you only focus on your studies while we handle the rest.</p>
-          </div>
+    <section id="services" className="py-10 md:py-14 bg-white relative font-sans">
+      <div className="container mx-auto px-4 lg:px-8 max-w-[1300px]">
+        
+        {/* Section Header */}
+        <div className="text-center mb-10 md:mb-12">
+          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
+            WHAT WE DO
+          </span>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+            Our Student Support Services
+          </h2>
+          <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            To help medical students in India get admission to top-ranked and government medical universities all over the World, we offer a variety of integrated student services right from counselling to travel arrangements and continuous support during student's medical education all over the World.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {servicesList.map((service, idx) => (
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8">
+          
+          {/* Left Column */}
+          <div className="flex flex-col gap-8">
+            {leftServices.map((service, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: idx * 0.1, duration: 0.5 }}
+                className="bg-white p-6 md:p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 relative overflow-hidden group"
+              >
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#1D4ED8] to-[#30AFFF] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] flex items-center justify-center shadow-md">
+                    {service.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#1D4ED8] transition-colors">{service.title}</h3>
+                    <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
+                      {service.desc}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col gap-8">
+            {rightServices.map((service, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: idx * 0.1 + 0.2, duration: 0.5 }}
+                className="bg-white p-6 md:p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 relative overflow-hidden group"
+              >
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#1D4ED8] to-[#30AFFF] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] flex items-center justify-center shadow-md">
+                    {service.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#1D4ED8] transition-colors">{service.title}</h3>
+                    <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
+                      {service.desc}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+
+            {/* Highlight Box */}
             <motion.div 
-              key={idx}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.05, duration: 0.4 }}
-              className="p-5 rounded-lg border border-slate-200 shadow-sm bg-offWhite hover:bg-navy-900 hover:text-white transition-all duration-300 group"
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] p-8 rounded-xl shadow-[0_10px_30px_rgba(48,175,255,0.3)] text-white relative overflow-hidden mt-auto"
             >
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-medicalBlue mb-4 group-hover:bg-white/10 group-hover:text-white transition-colors">
-                {service.icon}
+              <div className="absolute -right-6 -top-6 text-white/10">
+                <CheckCircle2 size={120} strokeWidth={1} />
               </div>
-              <h3 className="font-medium text-lg mb-2 text-navy-900 group-hover:text-white">{service.title}</h3>
-              <p className="text-sm text-gray-500 group-hover:text-gray-300">{service.desc}</p>
+              <div className="relative z-10">
+                <h3 className="text-[22px] md:text-[24px] font-black mb-4 leading-tight uppercase tracking-wide">
+                  When We Say Complete Support, We Mean It
+                </h3>
+                <p className="text-[16px] text-white/90 leading-relaxed font-medium">
+                  SKMM remains involved with the students during the entire cycle of academic pursuit starting from choosing the university till the convocation.
+                </p>
+              </div>
             </motion.div>
-          ))}
+          </div>
+
         </div>
       </div>
     </section>
@@ -48,6 +136,3 @@ const Services = () => {
 };
 
 export default Services;
-
-
-

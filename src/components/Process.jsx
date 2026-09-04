@@ -1,74 +1,96 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MessageSquareText, Globe, FileText, MailCheck, BookOpen, PlaneTakeoff, GraduationCap } from 'lucide-react';
 
 const Process = () => {
   const steps = [
     {
-      icon: "passport",
-      title: "Get your passport"
+      icon: <MessageSquareText size={24} strokeWidth={1.5} />,
+      line1: "Free Counselling",
+      line2: "& Profile Evaluation"
     },
     {
-      icon: "school",
-      title: "Select your universities submit your 10th & 12th\nClass mark sheets and Get Your Admission Letter"
+      icon: <Globe size={24} strokeWidth={1.5} />,
+      line1: "College / Country",
+      line2: "Selection"
     },
     {
-      icon: "mail",
-      title: "Get your\nInvitation Letter"
+      icon: <FileText size={24} strokeWidth={1.5} />,
+      line1: "Application",
+      line2: "& Documentation"
     },
     {
-      icon: "fact_check",
-      title: "Submit passport with Visa Support Letter &\nother required documents to respective Embassy.\nGet your Visa"
+      icon: <MailCheck size={24} strokeWidth={1.5} />,
+      line1: "Admission",
+      line2: "Letter"
     },
     {
-      icon: "flight",
-      title: "Start your Journey\nto become a Doctor"
+      icon: <BookOpen size={24} strokeWidth={1.5} />, // Placeholder for passport/visa icon
+      line1: "Visa Processing",
+      line2: "(for Abroad)"
+    },
+    {
+      icon: <PlaneTakeoff size={24} strokeWidth={1.5} />,
+      line1: "Travel &",
+      line2: "Departure"
+    },
+    {
+      icon: <GraduationCap size={24} strokeWidth={1.5} />,
+      line1: "Final",
+      line2: "Enrollment"
     }
   ];
 
   return (
-    <section className="py-8 md:py-10 bg-[#1e2433] border-t border-slate-800 font-sans overflow-hidden">
-      <div className="container mx-auto px-4 max-w-[1440px]">
+    <section 
+      className="py-8 md:py-10 bg-[#1e2433] relative font-sans overflow-hidden"
+    >
+      <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-8 md:mb-10">
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-2 tracking-tight text-white">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-[20px] md:text-[24px] font-bold text-white tracking-tight">
             Process of MBBS Admission in India and Abroad
           </h2>
         </div>
 
-        {/* Horizontal Scrollable Timeline for Mobile, Full Width for Desktop */}
-        <div className="relative max-w-7xl mx-auto overflow-x-auto md:overflow-x-visible pb-6 scroll-smooth snap-x snap-mandatory" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-          <style>{`
-            .overflow-x-auto::-webkit-scrollbar { display: none; }
-          `}</style>
+        {/* Timeline Container */}
+        <div className="relative max-w-7xl mx-auto px-2 md:px-6">
           
-          <div className="min-w-[900px] md:min-w-0 w-full relative py-2 px-4 md:px-0">
-            
-            {/* Connecting Line */}
-            <div className="absolute top-[40px] md:top-[48px] left-[10%] right-[10%] h-[2px] bg-slate-700/60 z-0"></div>
-            
-            <div className="flex justify-between relative z-10 gap-2 md:gap-0">
-              {steps.map((step, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className="flex flex-col items-center text-center w-[180px] shrink-0 md:w-auto md:shrink md:flex-1 relative snap-center"
-                >
-                  {/* Circle */}
-                  <div className="w-[64px] h-[64px] md:w-[76px] md:h-[76px] rounded-full bg-[#1e2433] text-[#30AFFF] flex items-center justify-center mb-4 md:mb-5 z-10 border-[3px] md:border-[4px] border-slate-700/60 relative">
-                    <span className="material-symbols-outlined text-[28px]">{step.icon}</span>
-                  </div>
-                  {/* Title */}
-                  <h3 className="text-[12px] md:text-[13px] font-normal text-gray-300 leading-[1.4] whitespace-pre-line px-2 mt-1">
-                    {step.title}
-                  </h3>
-                </motion.div>
-              ))}
-            </div>
+          {/* Connecting line (Horizontal) */}
+          <div className="hidden md:block absolute top-[32px] left-[7%] right-[7%] h-[2px] bg-blue-200/20 z-0"></div>
 
+          {/* Grid of Steps */}
+          <div className="grid grid-cols-2 gap-y-10 gap-x-2 md:flex md:flex-row justify-between items-start md:gap-2 relative z-10">
+            {steps.map((step, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: idx * 0.05, duration: 0.4 }}
+                className="flex flex-col items-center text-center flex-1 relative group w-full"
+              >
+                {/* Icon Circle with Theme Gradient */}
+                <div className="relative w-[64px] h-[64px] shrink-0 rounded-full bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] text-white flex items-center justify-center mb-3 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
+                  {step.icon}
+                  {/* Step Number Badge */}
+                  <div className="absolute -top-1 -right-1 bg-white text-[#1D4ED8] text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-sm border border-gray-100">
+                    {idx + 1}
+                  </div>
+                </div>
+
+                {/* Text Content */}
+                <div className="px-1 flex flex-col items-center justify-center min-h-[40px]">
+                  <span className="text-[12px] md:text-[13px] font-bold text-white leading-tight">
+                    {step.line1}
+                  </span>
+                  <span className="text-[11px] md:text-[12px] font-medium text-slate-300 leading-tight mt-0.5">
+                    {step.line2}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
 

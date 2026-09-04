@@ -40,7 +40,7 @@ const FAQ = () => {
     <section id="faqs" className="py-10 md:py-14 bg-[#f0f5fa] border-t border-gray-100">
       <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
         <div className="text-center mb-14">
-          <span className="text-gray-900 font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px]">
+          <span className="font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
             FAQ
           </span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight text-gray-900">
@@ -61,7 +61,7 @@ const FAQ = () => {
                 onClick={() => setOpenIdx(openIdx === idx ? -1 : idx)}
                 className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
               >
-                <span className={`font-bold text-[17px] transition-colors ${openIdx === idx ? 'text-[#1e2433]' : 'text-gray-800'}`}>
+                <span className={`font-medium text-[15px] transition-colors ${openIdx === idx ? 'text-[#1e2433]' : 'text-gray-800'}`}>
                   {faq.q}
                 </span>
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${openIdx === idx ? 'bg-[#30AFFF]/10' : 'bg-gray-100'}`}>
@@ -81,7 +81,7 @@ const FAQ = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <div className="px-6 pb-6 pt-0 text-gray-600 mt-1">
-                      <p className="text-[16px] leading-relaxed font-medium">{faq.a}</p>
+                      <p className="text-[14.5px] leading-relaxed font-normal">{faq.a}</p>
                     </div>
                   </motion.div>
                 )}

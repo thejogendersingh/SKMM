@@ -20,7 +20,7 @@ const Contact = () => {
     <section id="contact" className="py-10 md:py-14 bg-primaryNavy relative border-t border-highlightBlue/20">
       <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
         <div className="text-center mb-14">
-          <span className="text-highlightBlue font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px]">
+          <span className="font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
             GET IN TOUCH
           </span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight leading-tight text-white">
@@ -57,13 +57,13 @@ const Contact = () => {
                   </div>
                 </a>
                 
-                <a href="mailto:info@skmmconsultancy.com" className="flex items-start gap-4 hover:text-highlightBlue transition-colors">
+                <a href="mailto:skmmconsultancy@gmail.com" className="flex items-start gap-4 hover:text-highlightBlue transition-colors">
                   <div className="w-12 h-12 rounded-full bg-primaryNavy flex items-center justify-center shrink-0 text-pureWhite border border-highlightBlue/20 shadow-inner">
                     <Mail size={18} />
                   </div>
                   <div>
                     <p className="text-[10px] text-iceWhite/70 mb-1 font-semibold uppercase tracking-wider">Email Address</p>
-                    <p className="font-bold text-[15px] text-pureWhite">info@skmmconsultancy.com</p>
+                    <p className="font-bold text-[15px] text-pureWhite">skmmconsultancy@gmail.com</p>
                   </div>
                 </a>
                 

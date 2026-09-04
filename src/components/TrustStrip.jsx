@@ -16,7 +16,7 @@ const TrustStrip = () => {
         
         {/* Centered Label */}
         <div className="text-center mb-8">
-          <p className="text-[12px] font-black text-[#1e2433]/50 uppercase tracking-widest">
+          <p className="text-[12px] font-black uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
             Admissions Recognized By Global Medical Councils
           </p>
         </div>

@@ -22,16 +22,16 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-10">
           
           {/* Brand & Contact Col */}
-          <div className="lg:w-[35%] flex flex-col">
-            <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="SKMM Consultancy Logo" className="h-12 w-auto aspect-square rounded-full object-cover" />
+          <div className="col-span-1 md:col-span-1 lg:col-span-1 mb-8 md:mb-0">
+            <a href="#home" className="flex items-center gap-2.5 md:gap-3 group mb-6 inline-flex">
+              <img src={logo} alt="SKMM Consultancy Logo" className="h-10 lg:h-12 w-auto aspect-square rounded-full object-cover shadow-sm bg-white" />
               <div className="flex flex-col justify-center">
-                <span className="text-[20px] font-black text-white leading-none tracking-tight">SKMM</span>
-                <span className="text-[9px] text-[#30AFFF] font-bold tracking-widest mt-0.5">CONSULTANCY</span>
+                <span className="text-[18px] lg:text-[20px] font-black text-white leading-none tracking-tight group-hover:text-blue-200 transition-colors">SKMM</span>
+                <span className="text-[8.5px] lg:text-[10px] text-slate-300 font-bold tracking-[0.2em] mt-0.5">CONSULTANCY</span>
               </div>
-            </div>
+            </a>
             <p className="text-gray-300 text-[13px] leading-relaxed mb-6 font-medium">
-              Established in 2021, SMMM Consultancy has helped over 1000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
+              Established in 2021, SMMM Consultancy has helped over 5000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
             </p>
             
             <div className="flex flex-col gap-3 mb-8">
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-white shrink-0" />
-                <span className="text-[13px] text-gray-300 font-medium">support@smmmconsultancy.com</span>
+                <span className="text-[13px] text-gray-300 font-medium">skmmconsultancy@gmail.com</span>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
               <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
+              <a href="https://www.instagram.com/skmm.consultancy" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </a>
               <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] rounded-md flex items-center justify-center text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-colors">

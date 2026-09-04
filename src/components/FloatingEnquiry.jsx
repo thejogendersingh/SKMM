@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send } from 'lucide-react';
 
 const FloatingEnquiry = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const hasOpened = sessionStorage.getItem('enquiryAutoOpened');
+    if (!hasOpened) {
+      const timer = setTimeout(() => {
+        setIsOpen(true);
+        sessionStorage.setItem('enquiryAutoOpened', 'true');
+      }, 30000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   return (
     <>
@@ -28,17 +39,20 @@ const FloatingEnquiry = () => {
         className="fixed top-1/2 right-0 z-[100] flex items-start"
       >
         {/* Form Panel */}
-        <div className="bg-white w-[300px] shadow-[-10px_0_30px_rgba(0,0,0,0.1)] rounded-bl-2xl border-l border-b border-t border-gray-200 overflow-hidden relative">
+        <div className="bg-white w-[300px] shadow-[-10px_0_30px_rgba(0,0,0,0.1)] rounded-tl-2xl rounded-bl-2xl border-l border-b border-t border-gray-200 overflow-hidden relative">
           
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] p-4 text-white relative">
-            <h3 className="font-medium text-lg">Enquiry Now</h3>
-            <p className="text-[13px] text-blue-100 mt-1 leading-tight">Fill the form and we'll get back to you instantly.</p>
+          <div className="bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] p-5 text-white relative flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=150" alt="Student Support" className="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-white/20 shrink-0" />
+            <div>
+              <h3 className="font-bold text-[16px] leading-tight mb-0.5 shadow-sm">Expert Counselling</h3>
+              <p className="text-[11.5px] text-blue-50 leading-tight">Get instant guidance for your MBBS admission.</p>
+            </div>
             <button 
               onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+              className="absolute top-3 right-3 text-white/80 hover:text-white transition-colors bg-black/10 rounded-full p-1"
             >
-              <X size={20} />
+              <X size={16} />
             </button>
           </div>
 
@@ -104,7 +118,7 @@ const FloatingEnquiry = () => {
           className={`absolute top-10 -left-[42px] w-[42px] h-[130px] bg-gradient-to-b from-[#1D4ED8] to-[#30AFFF] rounded-l-lg shadow-[-5px_0_15px_rgba(48,175,255,0.3)] flex items-center justify-center transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         >
           <span 
-            className="text-white font-bold tracking-wider uppercase text-[14px] whitespace-nowrap"
+            className="font-bold tracking-wider uppercase text-[14px] whitespace-nowrap text-white"
             style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
           >
             Enquiry Now

@@ -107,13 +107,13 @@ const Destinations = () => {
         
         {/* Header Section */}
         <div className="text-center mb-10 md:mb-12">
-          <p className="text-[12px] sm:text-[13px] font-bold text-gray-600 uppercase tracking-widest mb-2">
+          <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
             STUDY DESTINATIONS
           </p>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
             Countries We Offer for MBBS Abroad
           </h2>
-          <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-xl mx-auto">
+          <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-3xl mx-auto">
             We help you choose the perfect medical university abroad, tailored to your budget, career goals, and NMC guidelines.
           </p>
         </div>

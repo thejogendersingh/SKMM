@@ -1,102 +1,155 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, GraduationCap } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Star, CheckCircle2, ChevronRight, ChevronLeft } from 'lucide-react';
+
+const GoogleIcon = () => (
+  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+
+  </svg>
+);
 
 const Testimonials = () => {
-  const students = [
-    { name: "Aarav Sharma", location: "Russia", university: "Orenburg State Medical University", image: "https://i.pravatar.cc/150?img=11" },
-    { name: "Priya Patel", location: "Kazakhstan", university: "Kazakh National Medical University", image: "https://i.pravatar.cc/150?img=5" },
-    { name: "Rohan Desai", location: "Georgia", university: "Tbilisi State Medical University", image: "https://i.pravatar.cc/150?img=12" },
-    { name: "Ananya Singh", location: "Kyrgyzstan", university: "Asian Medical Institute", image: "https://i.pravatar.cc/150?img=9" },
-    { name: "Vikram Reddy", location: "Uzbekistan", university: "Samarkand State Medical Institute", image: "https://i.pravatar.cc/150?img=13" },
-    { name: "Neha Gupta", location: "Russia", university: "Kazan Federal University", image: "https://i.pravatar.cc/150?img=20" },
-    { name: "Aditya Kumar", location: "Kazakhstan", university: "Astana Medical University", image: "https://i.pravatar.cc/150?img=14" },
-    { name: "Shruti Sharma", location: "Georgia", university: "Batumi Shota Rustaveli State University", image: "https://i.pravatar.cc/150?img=21" },
-    { name: "Karan Verma", location: "Russia", university: "Crimea Federal University", image: "https://i.pravatar.cc/150?img=15" },
-    { name: "Pooja Mishra", location: "Uzbekistan", university: "Bukhara State Medical Institute", image: "https://i.pravatar.cc/150?img=22" },
-    
-    { name: "Rahul Singh", location: "Kyrgyzstan", university: "Osh State University", image: "https://i.pravatar.cc/150?img=33" },
-    { name: "Divya Patel", location: "Georgia", university: "European University", image: "https://i.pravatar.cc/150?img=24" },
-    { name: "Siddharth Rao", location: "Russia", university: "Bashkir State Medical University", image: "https://i.pravatar.cc/150?img=53" },
-    { name: "Kavya Menon", location: "Kazakhstan", university: "Semey Medical University", image: "https://i.pravatar.cc/150?img=26" },
-    { name: "Amit Joshi", location: "Uzbekistan", university: "Tashkent Medical Academy", image: "https://i.pravatar.cc/150?img=57" },
-    { name: "Sneha Reddy", location: "Russia", university: "Perm State Medical University", image: "https://i.pravatar.cc/150?img=28" },
-    { name: "Varun Malhotra", location: "Georgia", university: "Caucasus International University", image: "https://i.pravatar.cc/150?img=59" },
-    { name: "Nisha Singh", location: "Kyrgyzstan", university: "Kyrgyz State Medical Academy", image: "https://i.pravatar.cc/150?img=30" },
-    { name: "Arjun Nair", location: "Kazakhstan", university: "South Kazakhstan Medical Academy", image: "https://i.pravatar.cc/150?img=61" },
-    { name: "Megha Sharma", location: "Russia", university: "Ulyanovsk State University", image: "https://i.pravatar.cc/150?img=32" }
+  const scrollRef = useRef(null);
+
+  const reviews = [
+    {
+      name: "Aarav Sharma",
+      time: "2 months ago",
+      avatar: "A",
+      color: "bg-purple-600",
+      text: "SKMM Consultancy provides a perfect combination of professionalism and student support. I would gladly recommend their services to others. The entire visa and admission process for Russia was completely seamless."
+    },
+    {
+      name: "Priya Patel",
+      time: "3 months ago",
+      avatar: "P",
+      color: "bg-blue-500",
+      text: "I was confused about studying MBBS in Kazakhstan, but SKMM Consultancy made the process simple. Their counseling, university selection, and visa support were excellent. They are with you till you reach the campus!"
+    },
+    {
+      name: "Rohan Desai",
+      time: "4 months ago",
+      avatar: "R",
+      color: "bg-amber-500",
+      text: "Best consultancy for MBBS abroad in Georgia—proper guidance, transparent fees & full support till admission. Thanks to the entire team for helping me secure a seat in Tbilisi State Medical University."
+    },
+    {
+      name: "Ananya Singh",
+      time: "5 months ago",
+      avatar: "A",
+      color: "bg-green-600",
+      text: "Very genuine consultancy for MBBS abroad. They guided me through every step for admission in Kyrgyzstan. From documentation to travel arrangements, everything was handled perfectly without any hidden charges."
+    },
+    {
+      name: "Vikram Reddy",
+      time: "5 months ago",
+      avatar: "V",
+      color: "bg-teal-500",
+      text: "I had a great experience with SKMM Consultancy. They are very transparent and honest about the universities, fee structure, and hostel facilities in Uzbekistan. Truly the best advisors you can get."
+    },
+    {
+      name: "Neha Gupta",
+      time: "6 months ago",
+      avatar: "N",
+      color: "bg-rose-500",
+      text: "SKMM Consultancy is doing a great job! Their team is very polite and always ready to help. They made my journey to Russia very smooth and hassle-free."
+    }
   ];
 
-  const row1 = students.slice(0, 10);
-  const row2 = students.slice(10, 20);
-
-  const rowWidth = 3240; 
+  const scroll = (dir) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: dir === 'left' ? -350 : 350, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <section id="testimonials" className="py-12 md:py-16 bg-[#f8fafc] relative border-t border-gray-100 overflow-hidden font-sans">
-      <div className="container mx-auto px-4 max-w-[1440px] relative z-10 mb-8">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight text-gray-900">
-            Our Successful Students
+    <section 
+      id="testimonials" 
+      className="py-12 md:py-16 relative font-sans border-t border-slate-100 overflow-hidden bg-fixed bg-center bg-cover"
+      style={{ backgroundImage: `url('https://images.pexels.com/photos/8828679/pexels-photo-8828679.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80')` }}
+    >
+      {/* Light Overlay for Map Background */}
+      <div className="absolute inset-0 bg-[#f4f7fc]/90 backdrop-blur-[1px]"></div>
+
+      <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] mb-2 block">
+            STUDENT SUCCESS STORIES
+          </span>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+            What Our Students Say
           </h2>
-          <p className="text-[16px] text-gray-600 leading-relaxed font-medium">
-            Join hundreds of Indian students who have trusted SMMM Consultancy to achieve their dream of studying MBBS abroad in top NMC-approved medical universities.
+          <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed font-medium">
+            Real stories from real students who trusted SKMM Consultancy with their MBBS abroad journey.
           </p>
         </div>
-      </div>
 
-      <div className="relative flex flex-col gap-6 overflow-hidden w-full pb-10">
-        
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-[#f8fafc] to-transparent z-20 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-[#f8fafc] to-transparent z-20 pointer-events-none"></div>
+        {/* Content Area - Only Scrollable Reviews Now */}
+        <div className="max-w-7xl mx-auto relative group">
+            
+          {/* Scroll Buttons (Desktop) */}
+          <button onClick={() => scroll('left')} className="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full shadow-md border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
+            <ChevronLeft size={22} />
+          </button>
+          <button onClick={() => scroll('right')} className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full shadow-md border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
+            <ChevronRight size={22} />
+          </button>
 
-        <div className="flex w-max relative group">
-          <motion.div 
-            className="flex gap-6 pr-6"
-            animate={{ x: [0, -rowWidth] }}
-            transition={{ ease: "linear", duration: 40, repeat: Infinity }}
+          <div 
+            ref={scrollRef}
+            className="flex gap-5 overflow-x-auto pb-6 pt-1 snap-x snap-mandatory hide-scrollbar px-4 lg:px-2"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {[...row1, ...row1, ...row1].map((student, idx) => (
-              <StudentCard key={`r1-${idx}`} student={student} />
+            {reviews.map((review, idx) => (
+              <div 
+                key={idx} 
+                className="w-[300px] md:w-[340px] shrink-0 bg-white rounded-xl p-5 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.03)] snap-center flex flex-col"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-[16px] shrink-0 ${review.color}`}>
+                      {review.avatar}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[14px] text-gray-900 leading-tight">{review.name}</h4>
+                      <span className="text-[12px] text-gray-500 font-medium">{review.time}</span>
+                    </div>
+                  </div>
+                  <GoogleIcon />
+                </div>
+                
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={13} className="fill-amber-400 text-amber-400" />
+                  ))}
+                  <CheckCircle2 size={13} className="text-blue-500 ml-1" />
+                </div>
+                
+                <p className="text-[14px] text-gray-700 leading-relaxed line-clamp-4">
+                  {review.text}
+                </p>
+                
+                <button className="text-[13px] text-gray-500 font-medium mt-3 text-left hover:text-gray-800 transition-colors">
+                  Read more
+                </button>
+              </div>
             ))}
-          </motion.div>
+          </div>
+            
         </div>
-
-        <div className="flex w-max relative group" style={{ marginLeft: '-500px' }}>
-          <motion.div 
-            className="flex gap-6 pr-6"
-            animate={{ x: [-rowWidth, 0] }}
-            transition={{ ease: "linear", duration: 35, repeat: Infinity }}
-          >
-            {[...row2, ...row2, ...row2].map((student, idx) => (
-              <StudentCard key={`r2-${idx}`} student={student} />
-            ))}
-          </motion.div>
-        </div>
-
       </div>
+      
+      <style dangerouslySetInnerHTML={{__html: `
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      `}} />
     </section>
-  );
-};
-
-const StudentCard = ({ student }) => {
-  return (
-    <div className="bg-white rounded-xl p-4 w-[300px] shrink-0 border border-slate-200 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow hover:border-[#30AFFF]/30">
-      <div className="w-[64px] h-[64px] rounded-full overflow-hidden shrink-0 border-[3px] border-[#f0f5fa]">
-        <img src={student.image} alt={student.name} className="w-full h-full object-cover" loading="lazy" />
-      </div>
-      <div className="flex flex-col flex-1 min-w-0">
-        <h4 className="font-bold text-[15px] text-gray-900 truncate leading-tight">{student.name}</h4>
-        <div className="flex items-center gap-1.5 mt-1 text-[#30AFFF]">
-          <MapPin size={12} strokeWidth={3} className="shrink-0" />
-          <span className="text-[13px] font-bold truncate">{student.location}</span>
-        </div>
-        <div className="flex items-center gap-1.5 mt-0.5 text-gray-500">
-          <GraduationCap size={12} strokeWidth={2.5} className="shrink-0" />
-          <span className="text-[12px] font-medium truncate">{student.university}</span>
-        </div>
-      </div>
-    </div>
   );
 };
 

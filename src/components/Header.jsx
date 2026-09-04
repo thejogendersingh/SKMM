@@ -24,10 +24,10 @@ const Header = () => {
   ];
 
   return (
-    <header className={`w-full z-50 transition-all duration-300 sticky top-0 ${scrolled ? 'shadow-md' : 'shadow-none'}`}>
+    <div className="sticky top-0 z-[100] w-full flex flex-col shadow-sm">
       
       {/* ================= TOP BAR ================= */}
-      <div className={`w-full bg-[#121935] text-white/90 border-b border-white/5 transition-all duration-300 overflow-hidden ${scrolled ? 'h-0 opacity-0' : 'h-[40px] lg:h-[46px] opacity-100'}`}>
+      <div className="w-full bg-[#121935] text-white/90 border-b border-white/5 h-[40px] lg:h-[46px] flex transition-all duration-300">
         <div className="container mx-auto max-w-[1440px] flex flex-col lg:flex-row items-center justify-between h-full px-4">
           
           {/* Left Side: Social Icons */}
@@ -42,9 +42,9 @@ const Header = () => {
 
           <div className="flex items-center justify-between w-full lg:w-auto h-full gap-4 lg:gap-6">
             {/* Email */}
-            <a href="mailto:info@skmmconsultancy.com" className="flex items-center gap-2 group cursor-pointer h-full">
+            <a href="mailto:skmmconsultancy@gmail.com" className="flex items-center gap-2 group cursor-pointer h-full">
               <Mail size={14} className="text-[#30AFFF] group-hover:scale-110 transition-transform" />
-              <span className="text-[12px] sm:text-[13px] font-medium group-hover:text-white transition-colors">info@skmmconsultancy.com</span>
+              <span className="text-[12px] sm:text-[13px] font-medium group-hover:text-white transition-colors">skmmconsultancy@gmail.com</span>
             </a>
 
             {/* Phone */}
@@ -57,15 +57,15 @@ const Header = () => {
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
-      <div className={`w-full transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md h-[70px]' : 'bg-white h-[70px] lg:h-[85px]'}`}>
+      <header className={`w-full transition-all duration-300 ${scrolled ? 'bg-white h-[70px] shadow-md' : 'bg-white h-[70px] lg:h-[85px] shadow-sm'}`}>
         <div className="container mx-auto max-w-[1440px] flex items-center justify-between h-full px-4">
           
           <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center gap-2.5 group">
-              <img src={logo} alt="SKMM Consultancy Logo" className={`w-auto aspect-square rounded-full object-cover transition-all duration-300 ${scrolled ? 'h-11' : 'h-12 lg:h-16'}`} />
+            <a href="#home" className="flex items-center gap-2.5 md:gap-3 group">
+              <img src={logo} alt="SKMM Consultancy Logo" className={`w-auto aspect-square rounded-full object-cover transition-all duration-300 shadow-sm ${scrolled ? 'h-9 lg:h-10' : 'h-10 lg:h-12'}`} />
               <div className="flex flex-col justify-center">
-                <span className="text-[18px] lg:text-[22px] font-black text-[#121935] leading-none tracking-tight group-hover:text-[#1D4ED8] transition-colors">SKMM</span>
-                <span className="text-[8.5px] lg:text-[10px] text-[#121935] font-extrabold tracking-[0.2em] mt-1">CONSULTANCY</span>
+                <span className={`font-black text-[#121935] leading-none tracking-tight group-hover:text-[#1D4ED8] transition-all duration-300 ${scrolled ? 'text-[17px] lg:text-[19px]' : 'text-[18px] lg:text-[20px]'}`}>SKMM</span>
+                <span className={`text-slate-500 font-bold tracking-[0.2em] transition-all duration-300 mt-0.5 ${scrolled ? 'text-[8px] lg:text-[9px]' : 'text-[8.5px] lg:text-[10px]'}`}>CONSULTANCY</span>
               </div>
             </a>
           </div>
@@ -110,7 +110,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* ================= MOBILE HEADER OVERLAY ================= */}
       <div className={`
@@ -153,15 +153,15 @@ const Header = () => {
             </div>
             <span className="font-bold text-[16px]">+91 96496 37111</span>
           </a>
-          <a href="mailto:info@skmmconsultancy.com" className="flex items-center gap-4 text-[#121935]">
+          <a href="mailto:skmmconsultancy@gmail.com" className="flex items-center gap-4 text-[#121935]">
             <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-[#1D4ED8]">
               <Mail size={18} />
             </div>
-            <span className="font-bold text-[16px]">info@skmmconsultancy.com</span>
+            <span className="font-bold text-[16px]">skmmconsultancy@gmail.com</span>
           </a>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
