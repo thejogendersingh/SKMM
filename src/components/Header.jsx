@@ -57,12 +57,12 @@ const Header = () => {
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
-      <header className={`w-full transition-all duration-300 ${scrolled ? 'bg-white h-[70px] ' : 'bg-white h-[75px] lg:h-[85px] '}`}>
+      <header className={`w-full transition-all duration-300 ${scrolled ? 'bg-white h-[70px] lg:h-[75px]' : 'bg-white h-[75px] lg:h-[85px]'}`}>
         <div className="container mx-auto max-w-[1440px] flex items-center justify-between h-full px-4">
           
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center group">
-              <img src={logo} alt="Eduway India Logo" className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-10 lg:h-12' : 'h-12 lg:h-16'}`} />
+              <img src={logo} alt="Eduway India Logo" className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-[44px] lg:h-[56px]' : 'h-12 lg:h-16'}`} />
             </a>
           </div>
 
