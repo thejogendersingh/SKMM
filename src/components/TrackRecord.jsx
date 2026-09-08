@@ -46,7 +46,7 @@ const TrackRecord = () => {
       <div className="container mx-auto px-4 lg:px-8 max-w-[1440px] relative z-10">
         
         <div className="text-center max-w-5xl mx-auto pt-4 lg:pt-8 mb-4 md:mb-6 px-4">
-          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">Our Track Record</span>
+          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">Our Track Record</span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mt-2 mb-3 md:mb-4 leading-snug text-gray-900">
             A Legacy of Excellence in Global Medical Education
           </h2>
@@ -68,8 +68,8 @@ const TrackRecord = () => {
                 key={idx} 
                 className="w-[240px] md:w-[260px] flex-shrink-0 px-2.5"
               >
-                <div className="bg-white border border-slate-200 rounded-xl p-5 flex flex-col items-center text-center group shadow-[0_2px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 h-full">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:-translate-y-1.5 group-hover:scale-110 group-hover:shadow-sm ${stat.iconBg}`}>
+                <div className="bg-white border border-slate-200 rounded-xl p-5 flex flex-col items-center text-center group   transition-all duration-300 h-full">
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:-translate-y-1.5 group-hover:scale-110 group- ${stat.iconBg}`}>
                     {React.cloneElement(stat.icon, { size: 20 })}
                   </div>
                   <h3 className="text-[26px] md:text-[28px] font-medium text-gray-900 mb-1.5 tracking-tight transition-colors duration-300">{stat.number}</h3>

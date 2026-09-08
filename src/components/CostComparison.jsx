@@ -26,11 +26,11 @@ const CostComparison = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
-              className="bg-white rounded-lg p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all"
+              className="bg-white rounded-lg p-6  border border-gray-100  transition-all"
             >
               <h3 className="text-xl font-medium text-navy-900 mb-4 pb-4 border-b border-gray-100 flex items-center justify-between">
                 {cost.country}
-                <span className="text-xs bg-blue-50 text-medicalBlue px-2 py-1 rounded-md">{cost.duration}</span>
+                <span className="text-xs bg-red-50 text-medicalBlue px-2 py-1 rounded-md">{cost.duration}</span>
               </h3>
               
               <div className="space-y-3 mb-6">
@@ -45,7 +45,7 @@ const CostComparison = () => {
               </div>
               
               <div className="bg-navy-900 text-white p-3 rounded-lg flex justify-between items-center">
-                <span className="text-xs font-medium text-blue-200">Est. Total Range</span>
+                <span className="text-xs font-medium text-red-200">Est. Total Range</span>
                 <span className="font-bold text-lg">{cost.total}</span>
               </div>
             </motion.div>
@@ -55,11 +55,11 @@ const CostComparison = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-primaryRed to-red-900 rounded-lg p-6 shadow-md text-white flex flex-col justify-center items-center text-center"
+            className="bg-gradient-to-br from-primaryRed to-red-900 rounded-lg p-6  text-white flex flex-col justify-center items-center text-center"
           >
             <h3 className="text-xl font-medium mb-3">Need Exact Fee Details?</h3>
             <p className="text-sm text-red-100 mb-6">Get the latest fee structures of top universities directly to your WhatsApp.</p>
-            <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
+            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
               Get Latest Fee Details
             </a>
           </motion.div>

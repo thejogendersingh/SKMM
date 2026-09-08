@@ -9,15 +9,15 @@
   }
 
   body {
-    background-color: #F7FAFE; /* iceWhite */
-    color: #172B3A; /* deepSlate */
+    background-color: #F9F9F9; /* iceWhite */
+    color: #111111; /* deepSlate */
     @apply antialiased;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primaryRed text-white px-6 py-3 rounded-lg font-semibold transition-all hover:bg-red-800 hover:shadow-lg focus:ring-4 focus:ring-red-300;
+    @apply bg-primaryRed text-white px-6 py-3 rounded-lg font-semibold transition-all hover:bg-red-800  focus:ring-4 focus:ring-red-300;
   }
   
   .btn-secondary {
@@ -25,7 +25,7 @@
   }
 
   .premium-card {
-    @apply bg-white rounded-2xl shadow-premium p-6 border border-gray-100 transition-all hover:shadow-xl hover:-translate-y-1;
+    @apply bg-white rounded-2xl  p-6 border border-gray-100 transition-all  hover:-translate-y-1;
   }
   
   .section-padding {

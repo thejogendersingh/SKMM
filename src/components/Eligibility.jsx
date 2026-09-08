@@ -26,9 +26,9 @@ const Eligibility = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
-              className="bg-offWhite p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow"
+              className="bg-offWhite p-6 rounded-lg border border-gray-100  transition-"
             >
-              <div className="w-12 h-12 rounded-full bg-blue-100 text-medicalBlue flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-red-100 text-medicalBlue flex items-center justify-center mb-4">
                 {item.icon}
               </div>
               <h3 className="font-medium text-navy-900 text-lg mb-2">{item.title}</h3>
@@ -44,7 +44,7 @@ const Eligibility = () => {
               <strong>Note:</strong> Eligibility requirements may vary based on country or specific university. Always verify the latest applicable rules before admission.
             </p>
           </div>
-          <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm shadow-sm">
+          <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm ">
             Check My Eligibility
           </a>
         </div>

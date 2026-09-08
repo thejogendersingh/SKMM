@@ -28,7 +28,7 @@ const EducationalInfo = () => {
                   { icon: <Handshake />, title: "Different Budget Options", desc: "Find universities that fit your specific financial planning without compromising quality." }
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue-50 text-medicalBlue flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-red-50 text-medicalBlue flex items-center justify-center shrink-0">
                       {item.icon}
                     </div>
                     <div>
@@ -44,7 +44,7 @@ const EducationalInfo = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="rounded-lg overflow-hidden shadow-xl"
+              className="rounded-lg overflow-hidden "
             >
               <img 
                 src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -68,7 +68,7 @@ const EducationalInfo = () => {
             </div>
             <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">We Help You Choose, Not Just Apply</h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-              SKMM Consultancy considers multiple factors to recommend the perfect university for you. We treat every student's profile uniquely.
+              Eduway India considers multiple factors to recommend the perfect university for you. We treat every student's profile uniquely.
             </p>
           </div>
 

@@ -17,10 +17,10 @@ const CountryComparison = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-[1440px] relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">Quick Country Comparison</h2>
-          <p className="text-blue-100 max-w-2xl mx-auto">A quick overview to help you compare top MBBS destinations. All fee ranges are indicative and subject to change.</p>
+          <p className="text-red-100 max-w-2xl mx-auto">A quick overview to help you compare top MBBS destinations. All fee ranges are indicative and subject to change.</p>
         </div>
 
-        <div className="overflow-x-auto rounded-lg border border-white/10 shadow-2xl bg-white/5 backdrop-blur-md">
+        <div className="overflow-x-auto rounded-lg border border-white/10  bg-white/5 backdrop-blur-md">
           <table className="w-full text-left border-collapse min-w-[800px]">
             <thead>
               <tr className="bg-white/10 border-b border-white/10">
@@ -51,7 +51,7 @@ const CountryComparison = () => {
         
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">*Fee figures are indicative. Verify current fees and regulations before applying.</p>
-          <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">
+          <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">
             Get Current Fee Details
           </a>
         </div>

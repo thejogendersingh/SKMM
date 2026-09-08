@@ -141,7 +141,7 @@ const Universities = () => {
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-8">
-          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
+          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             OUR PARTNERS
           </span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
@@ -157,7 +157,7 @@ const Universities = () => {
               onClick={() => setActiveTab(country)}
               className={`px-6 py-2.5 rounded-full font-bold text-[15px] transition-all duration-300 ${
                 activeTab === country 
-                ? 'bg-[#121935] text-white shadow-md' 
+                ? 'bg-[#0A1424] text-white ' 
                 : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
               }`}
             >
@@ -172,7 +172,7 @@ const Universities = () => {
           {/* Arrow Left */}
           <button 
             onClick={() => scroll('left')}
-            className="absolute -left-4 md:-left-6 top-[45%] -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-100 flex items-center justify-center text-gray-400 hover:text-[#30AFFF] transition-colors opacity-0 group-hover:opacity-100 disabled:opacity-0"
+            className="absolute -left-4 md:-left-6 top-[45%] -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full  border border-gray-100 flex items-center justify-center text-gray-400 hover:text-[#D00012] transition-colors opacity-0 group-hover:opacity-100 disabled:opacity-0"
           >
             <ChevronLeft size={24} />
           </button>
@@ -186,7 +186,7 @@ const Universities = () => {
             {filteredUniversities.map((uni, idx) => (
               <div 
                 key={idx}
-                className="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-start bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-slate-200"
+                className="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-start bg-white rounded-lg overflow-hidden   transition-all duration-300 flex flex-col border border-slate-200"
               >
                 <div className="relative h-[220px] w-full shrink-0">
                   <img 
@@ -198,7 +198,7 @@ const Universities = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
                   
                   {/* NMC Approved Badge */}
-                  <div className="absolute top-4 right-4 bg-[#22c55e] text-white text-[13px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md tracking-wide">
+                  <div className="absolute top-4 right-4 bg-[#22c55e] text-white text-[13px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5  tracking-wide">
                     <Trophy size={14} strokeWidth={2.5} /> NMC Approved
                   </div>
 
@@ -217,7 +217,7 @@ const Universities = () => {
               <div className="p-5 flex-1 flex flex-col bg-white">
                 
                 {/* Title */}
-                <h3 className="text-[18px] font-medium text-[#121935] mb-2 leading-tight">
+                <h3 className="text-[18px] font-medium text-[#0A1424] mb-2 leading-tight">
                   {uni.name}
                 </h3>
                 
@@ -231,10 +231,10 @@ const Universities = () => {
                   {/* City */}
                   <div className="bg-slate-50/80 border border-slate-100 rounded-xl p-3.5 flex flex-col justify-center">
                     <div className="flex items-center gap-2 text-slate-500 mb-1">
-                      <MapPin size={15} strokeWidth={2} className="text-blue-500" />
+                      <MapPin size={15} strokeWidth={2} className="text-red-600" />
                       <span className="text-[13px] font-medium">City</span>
                     </div>
-                    <span className="text-[15px] font-semibold text-[#121935]">{uni.city}</span>
+                    <span className="text-[15px] font-semibold text-[#0A1424]">{uni.city}</span>
                   </div>
                   
                   {/* Tuition Fees */}
@@ -243,7 +243,7 @@ const Universities = () => {
                       <GraduationCap size={15} strokeWidth={2} className="text-purple-500" />
                       <span className="text-[13px] font-medium">Tuition/yr</span>
                     </div>
-                    <span className="text-[15px] font-semibold text-[#121935]">{uni.tuition}</span>
+                    <span className="text-[15px] font-semibold text-[#0A1424]">{uni.tuition}</span>
                   </div>
 
                   {/* Hostel */}
@@ -252,7 +252,7 @@ const Universities = () => {
                       <Building size={15} strokeWidth={2} className="text-amber-500" />
                       <span className="text-[13px] font-medium">Hostel/yr</span>
                     </div>
-                    <span className="text-[15px] font-semibold text-[#121935]">{uni.hostel}</span>
+                    <span className="text-[15px] font-semibold text-[#0A1424]">{uni.hostel}</span>
                   </div>
 
                   {/* Total Package */}
@@ -261,12 +261,12 @@ const Universities = () => {
                       <Banknote size={15} strokeWidth={2} className="text-emerald-500" />
                       <span className="text-[13px] font-medium">Package/yr</span>
                     </div>
-                    <span className="text-[15px] font-semibold text-[#121935]">{uni.package}</span>
+                    <span className="text-[15px] font-semibold text-[#0A1424]">{uni.package}</span>
                   </div>
                 </div>
                 
                 {/* Apply Button - Our theme color */}
-                <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-[#121935] text-white py-3.5 rounded-lg font-semibold text-[15px] hover:bg-[#1e2433] transition-colors shadow-sm shrink-0">
+                <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-[#0A1424] text-white py-3.5 rounded-lg font-semibold text-[15px] hover:bg-[#0A1424] transition-colors  shrink-0">
                   Apply to This University
                 </a>
               </div>
@@ -277,7 +277,7 @@ const Universities = () => {
           {/* Arrow Right */}
           <button 
             onClick={() => scroll('right')}
-            className="absolute -right-4 md:-right-6 top-[45%] -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-100 flex items-center justify-center text-gray-400 hover:text-[#30AFFF] transition-colors opacity-0 group-hover:opacity-100"
+            className="absolute -right-4 md:-right-6 top-[45%] -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full  border border-gray-100 flex items-center justify-center text-gray-400 hover:text-[#D00012] transition-colors opacity-0 group-hover:opacity-100"
           >
             <ChevronRight size={24} />
           </button>
@@ -291,7 +291,7 @@ const Universities = () => {
               onClick={() => scrollToDot(dot)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 activeIndex === dot 
-                ? 'bg-[#30AFFF] w-4 opacity-80' 
+                ? 'bg-[#D00012] w-4 opacity-80' 
                 : 'bg-gray-200 w-2 hover:bg-gray-300'
               }`}
               aria-label={`Go to slide ${dot + 1}`}

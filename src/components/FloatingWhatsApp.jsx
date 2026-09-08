@@ -45,7 +45,7 @@ const FloatingWhatsApp = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -10 }}
-                className="absolute bottom-16 left-0 bg-white text-navy-900 text-sm font-semibold py-2 px-4 rounded-lg shadow-lg border border-gray-100 whitespace-nowrap flex items-center gap-3 mb-2"
+                className="absolute bottom-16 left-0 bg-white text-navy-900 text-sm font-semibold py-2 px-4 rounded-lg  border border-gray-100 whitespace-nowrap flex items-center gap-3 mb-2"
               >
                 Need Help? Chat with us!
                 <button onClick={() => setShowTooltip(false)} className="text-gray-400 hover:text-gray-700">
@@ -59,15 +59,15 @@ const FloatingWhatsApp = () => {
 
           {/* Button */}
           <a
-            href="https://wa.me/919649637111?text=Hi%20SKMM%20Consultancy%2C%20I%20am%20interested%20in%20MBBS%20Abroad%20admission%20and%20would%20like%20to%20get%20more%20information."
+            href="https://wa.me/919649637111?text=Hi%20Eduway India%20Consultancy%2C%20I%20am%20interested%20in%20MBBS%20Abroad%20admission%20and%20would%20like%20to%20get%20more%20information."
             target="_blank"
             rel="noopener noreferrer"
-            className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all hover:bg-[#1ebd5b]"
+            className="w-[52px] h-[52px] bg-[#25D366] text-white rounded-full flex items-center justify-center   hover:scale-110 transition-all hover:bg-[#1ebd5b]"
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
             aria-label="Chat on WhatsApp"
           >
-            <MessageCircle size={30} />
+            <MessageCircle size={28} />
           </a>
         </motion.div>
       )}

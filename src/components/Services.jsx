@@ -12,7 +12,7 @@ const Services = () => {
     {
       title: "ADMISSION APPLICATION",
       icon: <FileSignature size={28} className="text-white" />,
-      desc: "To make the admission process to the MBBS program easier and hassle-free, on behalf of the students, the team of SKMM files an application for admission to the MBBS program of the selected university at no additional cost to students. All the documentation work is taken care of by our team."
+      desc: "To make the admission process to the MBBS program easier and hassle-free, on behalf of the students, the team of Eduway India files an application for admission to the MBBS program of the selected university at no additional cost to students. All the documentation work is taken care of by our team."
     },
     {
       title: "DOCUMENTATION",
@@ -30,7 +30,7 @@ const Services = () => {
     {
       title: "FINANCIAL SUPPORT",
       icon: <Landmark size={28} className="text-white" />,
-      desc: "We assist our students in getting currency exchange. At SKMM, we make sure that our students get the best possible exchange rate. We have tie-ups with various International Banks that provide the students with Forex Card and traveller's cheque at the time of departure. While medical education all over the World is very affordable, some students may require financial support to fund their MBBS program."
+      desc: "We assist our students in getting currency exchange. At Eduway India, we make sure that our students get the best possible exchange rate. We have tie-ups with various International Banks that provide the students with Forex Card and traveller's cheque at the time of departure. While medical education all over the World is very affordable, some students may require financial support to fund their MBBS program."
     }
   ];
 
@@ -40,7 +40,7 @@ const Services = () => {
         
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-12">
-          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
+          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             WHAT WE DO
           </span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
@@ -63,15 +63,15 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-white p-6 md:p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 relative overflow-hidden group"
+                className="bg-white p-6 md:p-8 rounded-xl  border border-gray-100  transition- duration-300 relative overflow-hidden group"
               >
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#1D4ED8] to-[#30AFFF] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#B00010] to-[#E00018] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] flex items-center justify-center shadow-md">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#B00010] to-[#E00018] flex items-center justify-center ">
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#1D4ED8] transition-colors">{service.title}</h3>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#D00012] transition-colors">{service.title}</h3>
                     <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
                       {service.desc}
                     </p>
@@ -90,15 +90,15 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.1 + 0.2, duration: 0.5 }}
-                className="bg-white p-6 md:p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 relative overflow-hidden group"
+                className="bg-white p-6 md:p-8 rounded-xl  border border-gray-100  transition- duration-300 relative overflow-hidden group"
               >
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#1D4ED8] to-[#30AFFF] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#B00010] to-[#E00018] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] flex items-center justify-center shadow-md">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#B00010] to-[#E00018] flex items-center justify-center ">
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#1D4ED8] transition-colors">{service.title}</h3>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#D00012] transition-colors">{service.title}</h3>
                     <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
                       {service.desc}
                     </p>
@@ -113,7 +113,7 @@ const Services = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="bg-gradient-to-br from-[#1D4ED8] to-[#30AFFF] p-8 rounded-xl shadow-[0_10px_30px_rgba(48,175,255,0.3)] text-white relative overflow-hidden mt-auto"
+              className="bg-gradient-to-br from-[#B00010] to-[#E00018] p-8 rounded-xl  text-white relative overflow-hidden mt-auto"
             >
               <div className="absolute -right-6 -top-6 text-white/10">
                 <CheckCircle2 size={120} strokeWidth={1} />
@@ -123,7 +123,7 @@ const Services = () => {
                   When We Say Complete Support, We Mean It
                 </h3>
                 <p className="text-[16px] text-white/90 leading-relaxed font-medium">
-                  SKMM remains involved with the students during the entire cycle of academic pursuit starting from choosing the university till the convocation.
+                  Eduway India remains involved with the students during the entire cycle of academic pursuit starting from choosing the university till the convocation.
                 </p>
               </div>
             </motion.div>

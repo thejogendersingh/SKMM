@@ -20,14 +20,14 @@ const Testimonials = () => {
       time: "2 months ago",
       avatar: "A",
       color: "bg-purple-600",
-      text: "SKMM Consultancy provides a perfect combination of professionalism and student support. I would gladly recommend their services to others. The entire visa and admission process for Russia was completely seamless."
+      text: "Eduway India provides a perfect combination of professionalism and student support. I would gladly recommend their services to others. The entire visa and admission process for Russia was completely seamless."
     },
     {
       name: "Priya Patel",
       time: "3 months ago",
       avatar: "P",
-      color: "bg-blue-500",
-      text: "I was confused about studying MBBS in Kazakhstan, but SKMM Consultancy made the process simple. Their counseling, university selection, and visa support were excellent. They are with you till you reach the campus!"
+      color: "bg-red-600",
+      text: "I was confused about studying MBBS in Kazakhstan, but Eduway India made the process simple. Their counseling, university selection, and visa support were excellent. They are with you till you reach the campus!"
     },
     {
       name: "Rohan Desai",
@@ -48,14 +48,14 @@ const Testimonials = () => {
       time: "5 months ago",
       avatar: "V",
       color: "bg-teal-500",
-      text: "I had a great experience with SKMM Consultancy. They are very transparent and honest about the universities, fee structure, and hostel facilities in Uzbekistan. Truly the best advisors you can get."
+      text: "I had a great experience with Eduway India. They are very transparent and honest about the universities, fee structure, and hostel facilities in Uzbekistan. Truly the best advisors you can get."
     },
     {
       name: "Neha Gupta",
       time: "6 months ago",
       avatar: "N",
       color: "bg-rose-500",
-      text: "SKMM Consultancy is doing a great job! Their team is very polite and always ready to help. They made my journey to Russia very smooth and hassle-free."
+      text: "Eduway India is doing a great job! Their team is very polite and always ready to help. They made my journey to Russia very smooth and hassle-free."
     }
   ];
 
@@ -78,14 +78,14 @@ const Testimonials = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] mb-2 block">
+          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018] mb-2 block">
             STUDENT SUCCESS STORIES
           </span>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
             What Our Students Say
           </h2>
           <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed font-medium">
-            Real stories from real students who trusted SKMM Consultancy with their MBBS abroad journey.
+            Real stories from real students who trusted Eduway India with their MBBS abroad journey.
           </p>
         </div>
 
@@ -93,10 +93,10 @@ const Testimonials = () => {
         <div className="max-w-7xl mx-auto relative group">
             
           {/* Scroll Buttons (Desktop) */}
-          <button onClick={() => scroll('left')} className="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full shadow-md border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
+          <button onClick={() => scroll('left')} className="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full  border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
             <ChevronLeft size={22} />
           </button>
-          <button onClick={() => scroll('right')} className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full shadow-md border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
+          <button onClick={() => scroll('right')} className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white rounded-full  border border-slate-200 items-center justify-center z-20 hover:bg-slate-50 text-gray-600 transition-all opacity-0 group-hover:opacity-100">
             <ChevronRight size={22} />
           </button>
 
@@ -108,7 +108,7 @@ const Testimonials = () => {
             {reviews.map((review, idx) => (
               <div 
                 key={idx} 
-                className="w-[300px] md:w-[340px] shrink-0 bg-white rounded-xl p-5 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.03)] snap-center flex flex-col"
+                className="w-[300px] md:w-[340px] shrink-0 bg-white rounded-xl p-5 border border-slate-200  snap-center flex flex-col"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center gap-3">
@@ -127,7 +127,7 @@ const Testimonials = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={13} className="fill-amber-400 text-amber-400" />
                   ))}
-                  <CheckCircle2 size={13} className="text-blue-500 ml-1" />
+                  <CheckCircle2 size={13} className="text-red-600 ml-1" />
                 </div>
                 
                 <p className="text-[14px] text-gray-700 leading-relaxed line-clamp-4">

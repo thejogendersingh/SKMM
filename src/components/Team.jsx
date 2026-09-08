@@ -28,7 +28,7 @@ const Team = () => {
     <section className="section-padding bg-offWhite">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Meet the SKMM Team</h2>
+          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] section-title">Meet the Eduway India Team</h2>
           <p className="section-subtitle">Dedicated professionals committed to making your MBBS dream a reality.</p>
         </div>
 
@@ -40,7 +40,7 @@ const Team = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="bg-white rounded-lg overflow-hidden shadow-lg group border border-gray-100 text-center pb-6"
+              className="bg-white rounded-lg overflow-hidden  group border border-gray-100 text-center pb-6"
             >
               <div className="h-64 overflow-hidden bg-gray-200">
                 <img 
@@ -54,7 +54,7 @@ const Team = () => {
                 <p className="text-primaryRed font-medium text-sm mb-3">{member.role}</p>
                 <p className="text-gray-500 text-sm mb-4">{member.expert}</p>
                 
-                <a href="#" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-medicalBlue hover:bg-medicalBlue hover:text-white transition-colors">
+                <a href="#" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-50 text-medicalBlue hover:bg-medicalBlue hover:text-white transition-colors">
                   <Mail size={16} />
                 </a>
               </div>

@@ -11,12 +11,12 @@ const TrustStrip = () => {
   ];
 
   return (
-    <section className="py-12 bg-[#C4F7CA] relative z-10 shadow-sm border-b border-[#D8FFC5]">
+    <section className="py-12 bg-[#C4F7CA] relative z-10  border-b border-[#D8FFC5]">
       <div className="container mx-auto px-4 max-w-[1440px]">
         
         {/* Centered Label */}
         <div className="text-center mb-8">
-          <p className="text-[12px] font-black uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
+          <p className="text-[12px] font-black uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             Admissions Recognized By Global Medical Councils
           </p>
         </div>
@@ -32,12 +32,12 @@ const TrustStrip = () => {
               transition={{ delay: idx * 0.1, duration: 0.5 }}
               className="flex items-center gap-3 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-white/50 shadow-sm">
-                <span className="text-[#30AFFF] font-black tracking-tighter text-[14px]">{acc.name}</span>
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-white/50 ">
+                <span className="text-[#D00012] font-black tracking-tighter text-[14px]">{acc.name}</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-[14px] font-bold text-[#1e2433] leading-none mb-1">{acc.name}</span>
-                <span className="text-[11px] text-[#1e2433]/60 font-medium leading-tight max-w-[100px]">{acc.fullName}</span>
+                <span className="text-[14px] font-bold text-[#0A1424] leading-none mb-1">{acc.name}</span>
+                <span className="text-[11px] text-[#0A1424]/60 font-medium leading-tight max-w-[100px]">{acc.fullName}</span>
               </div>
             </motion.div>
           ))}

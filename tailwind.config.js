@@ -8,21 +8,21 @@ export default {
     extend: {
       colors: {
         // Legacy Mappings (to prevent breaks in untouched components)
-        navy: { 900: '#101C36', 800: '#101C36' },
-        primaryRed: '#8F2332',
-        medicalBlue: '#101C36',
+        navy: { 900: '#0A1424', 800: '#0A1424' },
+        primaryRed: '#D00012',
+        medicalBlue: '#0A1424',
         charcoal: '#20242B',
         offWhite: '#F3F1EC',
-        // New Blue Theme Palette
-        primaryNavy: '#0B1F3A',
-        premiumBlue: '#1557A6',
-        highlightBlue: '#2F80ED',
-        softBlue: '#EAF3FF',
-        iceWhite: '#F7FAFE',
-        pureWhite: '#FFFFFF',
-        deepSlate: '#172B3A',
-        coolGrey: '#64748B',
-        lightBlueGrey: '#DCE8F5',
+        // New Theme Palette
+        primaryNavy: '#0A1424',      // Navy Black
+        premiumBlue: '#8F0008',      // Dark Red
+        highlightBlue: '#D00012',    // Primary Red
+        softBlue: '#FCE8E8',         // Soft Red
+        iceWhite: '#F9F9F9',         // Off White
+        pureWhite: '#FFFFFF',        // White
+        deepSlate: '#111111',        // Very Dark
+        coolGrey: '#666666',         // Grey
+        lightBlueGrey: '#DDDDDD',    // Light Grey
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

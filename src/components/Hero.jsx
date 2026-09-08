@@ -23,8 +23,8 @@ const Hero = () => {
         }}
       ></div>
 
-      {/* Cyan Overlay Layer (Adjusted to be slightly more opaque) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#92EEFF]/85 to-[#92EEFF]/75 z-0"></div>
+      {/* Red Theme Overlay Layer */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-red-50/90 z-0"></div>
       
       {/* Soft abstract shape for depth */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/40 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3 z-0"></div>
@@ -35,31 +35,31 @@ const Hero = () => {
           {/* Left Column: Text & Country Pills */}
           <div className="w-full lg:w-[60%] flex flex-col items-start text-left">
             
-            <h1 className="text-4xl sm:text-4xl lg:text-[40px] font-bold text-[#1e2433] leading-[1.3] mb-4">
+            <h1 className="text-4xl sm:text-4xl lg:text-[40px] font-bold text-[#0A1424] leading-[1.3] mb-4">
               Secure Your MBBS Seat in Top Global Medical Universities
             </h1>
             
-            <p className="text-[#1e2433] text-[16px] sm:text-[17px] mb-6 font-medium opacity-90 leading-relaxed">
-              Transform your dream into reality with our 100% transparent admission process and end-to-end guidance. <strong className="font-extrabold text-[#1D4ED8] bg-white/50 px-2 py-0.5 rounded ml-1 inline-block mt-1 sm:mt-0">2026 Admissions Now Open!</strong>
+            <p className="text-[#0A1424] text-[16px] sm:text-[17px] mb-6 font-medium opacity-90 leading-relaxed">
+              Transform your dream into reality with our 100% transparent admission process and end-to-end guidance. <strong className="font-extrabold text-[#D00012] bg-white/50 px-2 py-0.5 rounded ml-1 inline-block mt-1 sm:mt-0">2026 Admissions Now Open!</strong>
             </p>
             
             {/* Country Pills Grid (3 on top, 2 on bottom) */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full max-w-[500px] mb-8">
               {countries.map((country, idx) => (
-                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded px-3 py-2.5 flex items-center gap-2.5 shadow-sm border-[1.5px] border-[#30AFFF]/40 hover:border-[#30AFFF]/60 transition-colors cursor-default">
-                  <img src={country.flagUrl} alt={`${country.name} flag`} className="w-[22px] h-auto rounded-[2px] shadow-[0_1px_2px_rgba(0,0,0,0.1)]" />
-                  <span className="text-[13px] font-bold text-[#1e2433] whitespace-nowrap">{country.name}</span>
+                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded px-3 py-2.5 flex items-center gap-2.5  border-[1.5px] border-red-200 hover:border-red-400 transition-colors cursor-default">
+                  <img src={country.flagUrl} alt={`${country.name} flag`} className="w-[22px] h-auto rounded-[2px] " />
+                  <span className="text-[13px] font-bold text-[#0A1424] whitespace-nowrap">{country.name}</span>
                 </div>
               ))}
             </div>
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-md font-bold text-[14px] transition-all shadow-[0_4px_15px_rgba(48,175,255,0.3)] hover:shadow-[0_6px_20px_rgba(48,175,255,0.4)] hover:-translate-y-0.5">
+              <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md font-bold text-[14px] transition-all hover:-translate-y-0.5">
                 Book Free Counselling Now
                 <ArrowRight size={15} />
               </a>
-              <a href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#1e2433] border border-[#1e2433]/20 rounded-md font-bold text-[14px] hover:bg-white/80 hover:border-[#1e2433]/40 transition-all">
+              <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#0A1424] border border-[#0A1424]/20 rounded-md font-bold text-[14px] hover:bg-white/80 hover:border-[#0A1424]/40 transition-all">
                 Apply Now
                 <ArrowRight size={15} />
               </a>
@@ -69,8 +69,8 @@ const Hero = () => {
 
           {/* Right Column: Lead Form Card */}
           <div className="w-full lg:w-[36%] flex justify-center lg:justify-end">
-            <div className="w-full max-w-[380px] bg-white rounded-lg shadow-[0_20px_60px_rgba(48,175,255,0.15)] border border-[#92EEFF]/50 p-6 sm:p-7">
-              <h3 className="text-lg font-medium text-[#1e2433] mb-5">
+            <div className="w-full max-w-[380px] bg-white rounded-lg  border border-red-100 p-6 sm:p-7">
+              <h3 className="text-lg font-medium text-[#0A1424] mb-5">
                 Get one on one Free Counselling
               </h3>
 
@@ -80,7 +80,7 @@ const Hero = () => {
                 const email = e.target.elements[1].value;
                 const phone = e.target.elements[2].value;
                 const country = e.target.elements[3].value;
-                const text = `Hello SKMM Consultancy,\nI would like to book a free counselling session.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}`;
+                const text = `Hello Eduway India,\nI would like to book a free counselling session.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}`;
                 window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
                 e.target.reset();
               }}>
@@ -89,7 +89,7 @@ const Hero = () => {
                     type="text" 
                     required
                     placeholder="Full Name *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#1e2433] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all placeholder-gray-400"
+                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
                 
@@ -98,7 +98,7 @@ const Hero = () => {
                     type="email" 
                     required
                     placeholder="Email Address *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#1e2433] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all placeholder-gray-400"
+                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
 
@@ -107,12 +107,12 @@ const Hero = () => {
                     type="tel" 
                     required
                     placeholder="Mobile Number *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#1e2433] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all placeholder-gray-400"
+                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
                 
                 <div>
-                  <select required className="w-full bg-[#f8fafc] border border-transparent text-[#1e2433] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#30AFFF] focus:bg-white transition-all cursor-pointer appearance-none">
+                  <select required className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all cursor-pointer appearance-none">
                     <option value="">Select MBBS Abroad Country *</option>
                     <option value="russia">Russia</option>
                     <option value="georgia">Georgia</option>
@@ -124,7 +124,7 @@ const Hero = () => {
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-md py-3 font-bold text-[14px] mt-2 transition-all shadow-[0_4px_15px_rgba(48,175,255,0.3)] hover:shadow-[0_6px_20px_rgba(48,175,255,0.4)] hover:-translate-y-0.5"
+                  className="w-full bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md py-3 font-bold text-[14px] mt-2 transition-all hover:-translate-y-0.5"
                 >
                   Book Free Counselling
                 </button>
@@ -134,12 +134,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Single Clean Wave Separator */}
-      <div className="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" className="w-full h-[24px] md:h-[48px] block">
-          <path fill="#ffffff" fillOpacity="1" d="M0,70 C480,120 960,-20 1440,50 L1440,100 L0,100 Z"></path>
-        </svg>
-      </div>
+
     </section>
   );
 };

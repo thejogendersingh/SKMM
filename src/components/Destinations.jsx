@@ -59,7 +59,7 @@ const Destinations = () => {
       name: "MBBS in Uzbekistan",
       subtitle: "Growing Hub",
       badge: "Budget Pick",
-      badgeColor: "bg-blue-500",
+      badgeColor: "bg-red-600",
       desc: "English medium universities with affordable tuition fees and modern facilities.",
       fees: "$3,900 - $4,300/yr",
       duration: "5+1 Years*",
@@ -89,7 +89,7 @@ const Destinations = () => {
       name: "More Destinations",
       subtitle: "Expanding Horizons",
       badge: "Coming Soon",
-      badgeColor: "bg-[#1e2433]",
+      badgeColor: "bg-[#0A1424]",
       desc: "We are constantly partnering with top medical universities globally.",
       fees: "TBA",
       duration: "Various",
@@ -107,7 +107,7 @@ const Destinations = () => {
         
         {/* Header Section */}
         <div className="text-center mb-10 md:mb-12">
-          <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF]">
+          <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             STUDY DESTINATIONS
           </p>
           <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
@@ -123,7 +123,7 @@ const Destinations = () => {
           {destinations.map((dest, idx) => (
             <div 
               key={idx} 
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-slate-200"
+              className="bg-white rounded-lg overflow-hidden   transition-all duration-300 flex flex-col border border-slate-200"
             >
               {/* Image Header */}
               <div className="relative h-[220px] w-full">
@@ -138,7 +138,7 @@ const Destinations = () => {
 
                 {/* Badge */}
                 <div className="absolute top-4 right-4">
-                  <span className={`${dest.badgeColor} text-white text-[13px] font-bold px-3 py-1.5 rounded-full shadow-md tracking-wide`}>
+                  <span className={`${dest.badgeColor} text-white text-[13px] font-bold px-3 py-1.5 rounded-full  tracking-wide`}>
                     {dest.badge}
                   </span>
                 </div>
@@ -187,7 +187,7 @@ const Destinations = () => {
 
                   {/* Eligibility */}
                   <div className="col-span-2 flex items-start gap-2.5">
-                    <div className="mt-0.5 text-blue-500 opacity-90">
+                    <div className="mt-0.5 text-red-600 opacity-90">
                       <GraduationCap size={16} strokeWidth={3} />
                     </div>
                     <div className="flex flex-col">
@@ -214,7 +214,7 @@ const Destinations = () => {
                   className={`w-full py-3.5 rounded-lg font-bold text-[15px] flex items-center justify-between px-5 transition-all
                     ${dest.isComingSoon 
                       ? 'bg-gray-100 text-gray-500 cursor-default' 
-                      : 'bg-[#121935] text-white hover:bg-[#1e2433] shadow-md shadow-[#121935]/20'
+                      : 'bg-[#0A1424] text-white hover:bg-[#0A1424]  #121935]/20'
                     }
                   `}
                 >
@@ -228,7 +228,7 @@ const Destinations = () => {
         </div>
 
         {/* Footer Note Banner */}
-        <div className="mt-12 relative overflow-hidden rounded-2xl shadow-xl border border-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 w-full bg-[#1e2433]">
+        <div className="mt-12 relative overflow-hidden rounded-2xl  border border-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 w-full bg-[#0A1424]">
           {/* Background Image / Overlay */}
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
           
@@ -237,16 +237,16 @@ const Destinations = () => {
               <GraduationCap size={24} className="text-white" />
             </div>
             <div className="text-center md:text-left">
-              <h4 className="text-white font-bold text-[18px] mb-2 drop-shadow-md">Planning to Study Abroad?</h4>
-              <p className="text-[15px] text-blue-100/90 max-w-2xl font-medium leading-relaxed drop-shadow-sm">
+              <h4 className="text-white font-bold text-[18px] mb-2 drop-">Planning to Study Abroad?</h4>
+              <p className="text-[15px] text-red-100/90 max-w-2xl font-medium leading-relaxed drop-">
                 Course duration may vary by university and applicable NMC regulations. Always verify the latest
                 eligibility, fee structure, and admission requirements before applying.
               </p>
             </div>
           </div>
           <a 
-            href="https://wa.me/919649637111?text=Hello%20SKMM%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
-            className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#1D4ED8] to-[#30AFFF] text-white rounded-lg font-bold text-[15px] hover:shadow-[0_8px_25px_rgba(48,175,255,0.4)] hover:-translate-y-1 transition-all shadow-md uppercase tracking-wide text-center"
+            href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
+            className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-lg font-bold text-[15px]  hover:-translate-y-1 transition-all  uppercase tracking-wide text-center"
           >
             Get Free Counselling
           </a>
