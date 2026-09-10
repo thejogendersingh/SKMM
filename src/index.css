@@ -33,11 +33,11 @@
   }
   
   .section-title {
-    @apply text-[22px] md:text-[26px] lg:text-[28px] font-medium text-gray-900 mb-3 md:mb-4 leading-snug;
+    @apply text-[22px] md:text-[26px] lg:text-[30px] font-semibold text-[#0A1424] mb-3 md:mb-5 tracking-tight leading-tight;
   }
   
   .section-subtitle {
-    @apply text-[14px] md:text-[16px] text-gray-600 max-w-xl mx-auto leading-relaxed;
+    @apply text-[15px] md:text-[17px] text-gray-600 max-w-2xl mx-auto leading-relaxed;
   }
 }
 /* trigger rebuild */

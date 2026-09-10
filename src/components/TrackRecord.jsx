@@ -47,7 +47,7 @@ const TrackRecord = () => {
         
         <div className="text-center max-w-5xl mx-auto pt-4 lg:pt-8 mb-4 md:mb-6 px-4">
           <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">Our Track Record</span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mt-2 mb-3 md:mb-4 leading-snug text-gray-900">
+          <h2 className="section-title">
             A Legacy of Excellence in Global Medical Education
           </h2>
           <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed w-full mx-auto">

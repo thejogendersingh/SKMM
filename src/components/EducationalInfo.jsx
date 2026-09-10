@@ -66,7 +66,7 @@ const EducationalInfo = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6">
               <BrainCircuit size={32} className="text-medicalBlue" />
             </div>
-            <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">We Help You Choose, Not Just Apply</h2>
+            <h2 className="section-title">We Help You Choose, Not Just Apply</h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
               Eduway India considers multiple factors to recommend the perfect university for you. We treat every student's profile uniquely.
             </p>

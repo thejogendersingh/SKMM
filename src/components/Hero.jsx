@@ -46,7 +46,7 @@ const Hero = () => {
             {/* Country Pills Grid (3 on top, 2 on bottom) */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full max-w-[500px] mb-8">
               {countries.map((country, idx) => (
-                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded px-3 py-2.5 flex items-center gap-2.5  border-[1.5px] border-red-200 hover:border-red-400 transition-colors cursor-default">
+                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded px-3 py-2.5 flex items-center gap-2.5  border-[1.5px] border-black/10 hover:border-black/20 transition-colors cursor-default">
                   <img src={country.flagUrl} alt={`${country.name} flag`} className="w-[22px] h-auto rounded-[2px] " />
                   <span className="text-[13px] font-bold text-[#0A1424] whitespace-nowrap">{country.name}</span>
                 </div>
@@ -55,11 +55,11 @@ const Hero = () => {
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md font-bold text-[14px] transition-all hover:-translate-y-0.5">
+              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md font-bold text-[14px] transition-all hover:-translate-y-0.5">
                 Book Free Counselling Now
                 <ArrowRight size={15} />
               </a>
-              <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#0A1424] border border-[#0A1424]/20 rounded-md font-bold text-[14px] hover:bg-white/80 hover:border-[#0A1424]/40 transition-all">
+              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#0A1424] border border-[#0A1424]/20 rounded-md font-bold text-[14px] hover:bg-white/80 hover:border-[#0A1424]/40 transition-all">
                 Apply Now
                 <ArrowRight size={15} />
               </a>
@@ -69,7 +69,7 @@ const Hero = () => {
 
           {/* Right Column: Lead Form Card */}
           <div className="w-full lg:w-[36%] flex justify-center lg:justify-end">
-            <div className="w-full max-w-[380px] bg-white rounded-lg  border border-red-100 p-6 sm:p-7">
+            <div className="w-full max-w-[380px] bg-white rounded-lg  border border-black/10 p-6 sm:p-7">
               <h3 className="text-lg font-medium text-[#0A1424] mb-5">
                 Get one on one Free Counselling
               </h3>
@@ -81,7 +81,7 @@ const Hero = () => {
                 const phone = e.target.elements[2].value;
                 const country = e.target.elements[3].value;
                 const text = `Hello Eduway India,\nI would like to book a free counselling session.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}`;
-                window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
+                window.open(`https://wa.me/919672854110?text=${encodeURIComponent(text)}`, '_blank');
                 e.target.reset();
               }}>
                 <div>

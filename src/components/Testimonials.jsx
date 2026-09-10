@@ -81,7 +81,7 @@ const Testimonials = () => {
           <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018] mb-2 block">
             STUDENT SUCCESS STORIES
           </span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+          <h2 className="section-title">
             What Our Students Say
           </h2>
           <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed font-medium">

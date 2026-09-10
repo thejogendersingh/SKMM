@@ -16,7 +16,7 @@ const CountryComparison = () => {
       
       <div className="container mx-auto px-4 md:px-8 max-w-[1440px] relative z-10">
         <div className="text-center mb-10">
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 text-gray-900">Quick Country Comparison</h2>
+          <h2 className="section-title">Quick Country Comparison</h2>
           <p className="text-red-100 max-w-2xl mx-auto">A quick overview to help you compare top MBBS destinations. All fee ranges are indicative and subject to change.</p>
         </div>
 
@@ -51,7 +51,7 @@ const CountryComparison = () => {
         
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">*Fee figures are indicative. Verify current fees and regulations before applying.</p>
-          <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">
+          <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">
             Get Current Fee Details
           </a>
         </div>

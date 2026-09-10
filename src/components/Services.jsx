@@ -43,7 +43,7 @@ const Services = () => {
           <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             WHAT WE DO
           </span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+          <h2 className="section-title">
             Our Student Support Services
           </h2>
           <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-2xl mx-auto">

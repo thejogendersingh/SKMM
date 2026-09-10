@@ -43,7 +43,7 @@ const FAQ = () => {
           <span className="font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             FAQ
           </span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight text-gray-900">
+          <h2 className="section-title">
             Frequently Asked Questions
           </h2>
           <p className="text-[16px] text-gray-600 leading-relaxed font-medium">
@@ -100,7 +100,7 @@ const FAQ = () => {
           </div>
           
           <div className="relative z-10 shrink-0 w-full md:w-auto">
-            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-8 py-3.5 md:py-3.5 rounded-lg font-medium text-[14px] md:text-[15px] hover:-translate-y-0.5 transition-all  ">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-8 py-3.5 md:py-3.5 rounded-lg font-medium text-[14px] md:text-[15px] hover:-translate-y-0.5 transition-all  ">
               Contact Our Counselling Team
             </a>
           </div>

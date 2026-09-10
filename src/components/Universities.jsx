@@ -144,7 +144,7 @@ const Universities = () => {
           <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             OUR PARTNERS
           </span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+          <h2 className="section-title">
             Our Exclusive Study MBBS Abroad Partners
           </h2>
         </div>
@@ -266,7 +266,7 @@ const Universities = () => {
                 </div>
                 
                 {/* Apply Button - Our theme color */}
-                <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-[#0A1424] text-white py-3.5 rounded-lg font-semibold text-[15px] hover:bg-[#0A1424] transition-colors  shrink-0">
+                <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-[#0A1424] text-white py-3.5 rounded-lg font-semibold text-[15px] hover:bg-[#0A1424] transition-colors  shrink-0">
                   Apply to This University
                 </a>
               </div>

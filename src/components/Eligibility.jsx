@@ -44,7 +44,7 @@ const Eligibility = () => {
               <strong>Note:</strong> Eligibility requirements may vary based on country or specific university. Always verify the latest applicable rules before admission.
             </p>
           </div>
-          <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm ">
+          <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap text-sm ">
             Check My Eligibility
           </a>
         </div>

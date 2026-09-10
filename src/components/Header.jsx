@@ -48,21 +48,21 @@ const Header = () => {
             </a>
 
             {/* Phone */}
-            <a href="tel:+919649637111" className="flex items-center gap-2 group cursor-pointer lg:bg-[#111] lg:px-4 lg:h-full lg:border-l lg:border-r lg:border-white/5">
+            <a href="tel:+919672854110" className="flex items-center gap-2 group cursor-pointer lg:bg-[#111] lg:px-4 lg:h-full lg:border-l lg:border-r lg:border-white/5">
               <Phone size={14} className="text-[#D00012] group-hover:scale-110 transition-transform" />
-              <span className="text-[12px] sm:text-[13px] font-bold group-hover:text-white transition-colors">+91 96496 37111</span>
+              <span className="text-[12px] sm:text-[13px] font-bold group-hover:text-white transition-colors">+91 96728 54110</span>
             </a>
           </div>
         </div>
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
-      <header className={`w-full transition-all duration-300 ${scrolled ? 'bg-white h-[80px] lg:h-[100px] shadow-sm' : 'bg-white h-[80px] lg:h-[100px]'}`}>
-        <div className="container mx-auto max-w-[1440px] flex items-center justify-between h-full px-4">
+      <header className={`w-full transition-all duration-300 border-b border-gray-100 ${scrolled ? 'bg-white/95 backdrop-blur-md h-[60px] lg:h-[70px] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.05)]' : 'bg-white h-[60px] lg:h-[70px]'}`}>
+        <div className="container mx-auto max-w-[1440px] flex items-center justify-between h-full pr-4 pl-0 md:pl-2 lg:pl-0">
           
-          <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center group">
-              <img src={logo} alt="Eduway India Logo" className="w-auto object-contain transition-all duration-300 h-[65px] lg:h-[85px]" />
+          <div className="flex-shrink-0 h-full">
+            <a href="#home" className="flex items-center h-full">
+              <img src={logo} alt="Eduway India Logo" className="w-auto h-full object-cover transition-transform duration-300 hover:opacity-90" />
             </a>
           </div>
 
@@ -86,7 +86,7 @@ const Header = () => {
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="relative group overflow-hidden bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-7 py-3 rounded-lg flex items-center justify-center font-bold text-[14px] transition-all hover:-translate-y-0.5">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="relative group overflow-hidden bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-7 py-3 rounded-lg flex items-center justify-center font-bold text-[14px] transition-all hover:-translate-y-0.5">
               <span className="relative z-10">Book Counselling</span>
               {/* Shine effect */}
               <div className="absolute inset-0 w-[200%] h-full bg-white/20 -skew-x-12 -translate-x-[120%] group-hover:translate-x-[120%] transition-transform duration-700"></div>
@@ -95,7 +95,7 @@ const Header = () => {
 
           {/* Mobile Menu Toggle & Actions */}
           <div className="lg:hidden flex items-center gap-3">
-            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-4 py-2 rounded flex items-center justify-center font-bold text-[12px]  tracking-wide">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-4 py-2 rounded flex items-center justify-center font-bold text-[12px]  tracking-wide">
               Apply Now
             </a>
             <button 
@@ -143,11 +143,11 @@ const Header = () => {
         
         {/* Mobile Contact Info */}
         <div className="mt-auto p-6 bg-red-50/30 border-t border-gray-100 space-y-4">
-          <a href="tel:+919649637111" className="flex items-center gap-4 text-[#0A1424]">
+          <a href="tel:+919672854110" className="flex items-center gap-4 text-[#0A1424]">
             <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-[#D00012]">
               <Phone size={18} />
             </div>
-            <span className="font-bold text-[16px]">+91 96496 37111</span>
+            <span className="font-bold text-[16px]">+91 96728 54110</span>
           </a>
           <a href="mailto:eduwayconsultancy@gmail.com" className="flex items-center gap-4 text-[#0A1424]">
             <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-[#D00012]">

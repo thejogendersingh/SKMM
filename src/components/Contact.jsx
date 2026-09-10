@@ -23,7 +23,7 @@ const Contact = () => {
           <span className="font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             GET IN TOUCH
           </span>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-4 tracking-tight leading-tight text-white">
+          <h2 className="section-title text-white">
             Let's Discuss Your MBBS Journey
           </h2>
           <p className="text-sm text-lightBlueGrey leading-relaxed font-medium max-w-2xl mx-auto">
@@ -47,13 +47,13 @@ const Contact = () => {
               <h3 className="text-2xl font-medium mb-8 relative z-10 text-pureWhite">Contact Information</h3>
               
               <div className="space-y-8 relative z-10">
-                <a href="tel:+919649637111" className="flex items-start gap-4 hover:text-highlightBlue transition-colors">
+                <a href="tel:+919672854110" className="flex items-start gap-4 hover:text-highlightBlue transition-colors">
                   <div className="w-12 h-12 rounded-full bg-primaryNavy flex items-center justify-center shrink-0 text-pureWhite border border-highlightBlue/20 ">
                     <Phone size={18} />
                   </div>
                   <div>
                     <p className="text-[10px] text-iceWhite/70 mb-1 font-semibold uppercase tracking-wider">Phone / WhatsApp</p>
-                    <p className="font-bold text-[15px] text-pureWhite">+91 96496 37111</p>
+                    <p className="font-bold text-[15px] text-pureWhite">+91 96728 54110</p>
                   </div>
                 </a>
                 

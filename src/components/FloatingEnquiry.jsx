@@ -64,7 +64,7 @@ const FloatingEnquiry = () => {
     const email = e.target.email.value;
     const dest = e.target.destination.value;
     const text = `Hello Eduway India,\nI have an enquiry.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nDestination: ${dest}`;
-    window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/919672854110?text=${encodeURIComponent(text)}`, '_blank');
     setIsOpen(false);
   }}>
             <div>

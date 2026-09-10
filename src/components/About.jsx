@@ -51,7 +51,7 @@ const About = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[8px] sm:text-[9px] font-medium text-white/90 mb-0.5">Call For Consultation</span>
-                  <span className="text-[12px] sm:text-[13px] font-bold text-white tracking-wide leading-none">+91 96496 37111</span>
+                  <span className="text-[12px] sm:text-[13px] font-bold text-white tracking-wide leading-none">+91 96728 54110</span>
                 </div>
               </motion.div>
 
@@ -158,7 +158,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
+              href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
               className="inline-block mt-2 px-7 py-2.5 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-full font-bold text-[13px]  hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide"
             >
               Get Started

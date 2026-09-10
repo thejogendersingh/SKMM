@@ -17,7 +17,7 @@ const CTA = () => {
           transition={{ duration: 0.6 }}
           className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-10 md:p-16 text-center "
         >
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-6 leading-tight text-white">
+          <h2 className="section-title text-white">
             Ready to Take the First Step Toward Your <span className="text-primaryRed">MBBS Dream?</span>
           </h2>
           
@@ -26,13 +26,13 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-primaryRed text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-800 transition-all   flex items-center justify-center gap-2 group">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-primaryRed text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-800 transition-all   flex items-center justify-center gap-2 group">
               Get Free Counselling
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
             
             <a 
-              href="https://wa.me/919649637111?text=Hi%20Eduway India%20Consultancy%2C%20I%20am%20ready%20to%20start%20my%20MBBS%20journey."
+              href="https://wa.me/919672854110?text=Hi%20Eduway India%20Consultancy%2C%20I%20am%20ready%20to%20start%20my%20MBBS%20journey."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#1ebd5b] transition-all  flex items-center justify-center gap-2"

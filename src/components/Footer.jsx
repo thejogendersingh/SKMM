@@ -12,7 +12,7 @@ const Footer = () => {
     const city = e.target.elements[4].value;
     const message = e.target.elements[5].value;
     const text = `Hello Eduway India,\nI have an enquiry from the website.\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nNEET Score: ${neet}\nCity: ${city}\nMessage: ${message}`;
-    window.open(`https://wa.me/919649637111?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/919672854110?text=${encodeURIComponent(text)}`, '_blank');
     e.target.reset();
   };
 
@@ -23,8 +23,8 @@ const Footer = () => {
           
           {/* Brand & Contact Col */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 mb-8 md:mb-0">
-            <a href="#home" className="flex items-center group mb-6 inline-flex bg-white px-5 py-2.5 rounded-xl">
-              <img src={logo} alt="Eduway India Logo" className="h-14 lg:h-16 w-auto object-contain" />
+            <a href="#home" className="flex items-center group mb-6 inline-flex overflow-hidden rounded-lg shadow-[0_4px_20px_rgba(208,0,18,0.15)] ring-1 ring-white/10 transition-transform hover:-translate-y-1">
+              <img src={logo} alt="Eduway India Logo" className="h-[60px] lg:h-[70px] w-auto object-cover" />
             </a>
             <p className="text-gray-300 text-[13px] leading-relaxed mb-6 font-medium">
               Established in 2021, Eduway India has helped over 5000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3 mb-8">
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-white shrink-0" />
-                <span className="text-[13px] text-gray-300 font-medium">+91 96496 37111</span>
+                <span className="text-[13px] text-gray-300 font-medium">+91 96728 54110</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-white shrink-0" />

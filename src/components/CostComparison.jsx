@@ -59,7 +59,7 @@ const CostComparison = () => {
           >
             <h3 className="text-xl font-medium mb-3">Need Exact Fee Details?</h3>
             <p className="text-sm text-red-100 mb-6">Get the latest fee structures of top universities directly to your WhatsApp.</p>
-            <a href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="bg-white text-primaryRed px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full">
               Get Latest Fee Details
             </a>
           </motion.div>

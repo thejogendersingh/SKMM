@@ -110,7 +110,7 @@ const Destinations = () => {
           <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
             STUDY DESTINATIONS
           </p>
-          <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-medium mb-3 md:mb-4 tracking-tight text-gray-900">
+          <h2 className="section-title">
             Countries We Offer for MBBS Abroad
           </h2>
           <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-3xl mx-auto">
@@ -245,7 +245,7 @@ const Destinations = () => {
             </div>
           </div>
           <a 
-            href="https://wa.me/919649637111?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
+            href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
             className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-lg font-bold text-[15px]  hover:-translate-y-1 transition-all  uppercase tracking-wide text-center"
           >
             Get Free Counselling
