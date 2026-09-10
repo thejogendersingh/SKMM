@@ -60,9 +60,9 @@ const Header = () => {
       <header className={`w-full transition-all duration-300 border-b border-gray-100 ${scrolled ? 'bg-white/95 backdrop-blur-md h-[60px] lg:h-[70px] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.05)]' : 'bg-white h-[60px] lg:h-[70px]'}`}>
         <div className="container mx-auto max-w-[1440px] flex items-center justify-between h-full pr-4 pl-0 md:pl-2 lg:pl-0">
           
-          <div className="flex-shrink-0 h-full">
+          <div className="flex-shrink-0 h-full flex items-center">
             <a href="#home" className="flex items-center h-full">
-              <img src={logo} alt="Eduway India Logo" className="w-auto h-full object-cover transition-transform duration-300 hover:opacity-90" />
+              <img src={logo} alt="Eduway India Logo" className="w-auto h-[40px] sm:h-[48px] lg:h-full max-w-[150px] sm:max-w-[180px] lg:max-w-none object-contain lg:object-cover transition-transform duration-300 hover:opacity-90" />
             </a>
           </div>
 
@@ -116,7 +116,7 @@ const Header = () => {
       `}>
         {/* Overlay Header */}
         <div className="flex items-center justify-between p-5 border-b border-gray-100">
-          <img src={logo} alt="Eduway India" className="h-14 w-auto object-contain" />
+          <img src={logo} alt="Eduway India" className="h-10 sm:h-12 w-auto max-w-[160px] object-contain" />
           <button 
             className="text-[#0A1424] bg-gray-100 hover:bg-gray-200 p-2.5 rounded-full transition-colors"
             onClick={() => setMobileMenuOpen(false)}
