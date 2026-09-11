@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <section className="py-20 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 relative overflow-hidden">
       {/* Decorative background patterns */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
+      <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.webp')] mix-blend-overlay"></div>
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primaryRed rounded-full blur-[100px] opacity-30"></div>
       
       <div className="container mx-auto px-4 md:px-8 max-w-5xl relative z-10">

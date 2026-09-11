@@ -43,7 +43,7 @@ const Process = () => {
 
   return (
     <section 
-      className="py-8 md:py-10 bg-[#0A1424] relative font-sans overflow-hidden"
+      className="py-8 md:py-10 bg-[#193147] relative font-sans overflow-hidden"
     >
       <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
         
@@ -72,10 +72,10 @@ const Process = () => {
                 className="flex flex-col items-center text-center flex-1 relative group w-full"
               >
                 {/* Icon Circle with Theme Gradient */}
-                <div className="relative w-[64px] h-[64px] shrink-0 rounded-full bg-gradient-to-br from-[#B00010] to-[#E00018] text-white flex items-center justify-center mb-3 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
+                <div className="relative w-[64px] h-[64px] shrink-0 rounded-full bg-gradient-to-br from-[#A51318] to-[#A51318] text-white flex items-center justify-center mb-3 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
                   {step.icon}
                   {/* Step Number Badge */}
-                  <div className="absolute -top-1 -right-1 bg-white text-[#D00012] text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center  border border-gray-100">
+                  <div className="absolute -top-1 -right-1 bg-white text-[#A51318] text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center  border border-gray-100">
                     {idx + 1}
                   </div>
                 </div>

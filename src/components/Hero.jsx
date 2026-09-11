@@ -3,11 +3,11 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const countries = [
-    { name: 'Russia', flagUrl: 'https://flagcdn.com/w40/ru.png' },
-    { name: 'Georgia', flagUrl: 'https://flagcdn.com/w40/ge.png' },
-    { name: 'Kazakhstan', flagUrl: 'https://flagcdn.com/w40/kz.png' },
-    { name: 'Uzbekistan', flagUrl: 'https://flagcdn.com/w40/uz.png' },
-    { name: 'Kyrgyzstan', flagUrl: 'https://flagcdn.com/w40/kg.png' }
+    { name: 'Russia', flagUrl: 'https://flagcdn.com/w40/ru.webp' },
+    { name: 'Georgia', flagUrl: 'https://flagcdn.com/w40/ge.webp' },
+    { name: 'Kazakhstan', flagUrl: 'https://flagcdn.com/w40/kz.webp' },
+    { name: 'Uzbekistan', flagUrl: 'https://flagcdn.com/w40/uz.webp' },
+    { name: 'Kyrgyzstan', flagUrl: 'https://flagcdn.com/w40/kg.webp' }
   ];
 
   return (
@@ -35,31 +35,31 @@ const Hero = () => {
           {/* Left Column: Text & Country Pills */}
           <div className="w-full lg:w-[60%] flex flex-col items-start text-left">
             
-            <h1 className="text-4xl sm:text-4xl lg:text-[40px] font-bold text-[#0A1424] leading-[1.3] mb-4">
+            <h1 className="text-4xl sm:text-4xl lg:text-[40px] font-satoshi font-extrabold text-[#193147] leading-[1.25] mb-4 tracking-tight">
               Secure Your MBBS Seat in Top Global Medical Universities
             </h1>
             
-            <p className="text-[#0A1424] text-[16px] sm:text-[17px] mb-6 font-medium opacity-90 leading-relaxed">
-              Transform your dream into reality with our 100% transparent admission process and end-to-end guidance. <strong className="font-extrabold text-[#D00012] bg-white/50 px-2 py-0.5 rounded ml-1 inline-block mt-1 sm:mt-0">2026 Admissions Now Open!</strong>
+            <p className="font-inter text-[#193147] text-[16px] sm:text-[17px] mb-6 font-medium opacity-90 leading-relaxed">
+              Transform your dream into reality with our 100% transparent admission process and end-to-end guidance. <strong className="font-semibold text-[#A51318] bg-white px-2 py-0.5 rounded ml-1 inline-block mt-1 sm:mt-0 shadow-sm border border-gray-100">2026 Admissions Now Open!</strong>
             </p>
             
             {/* Country Pills Grid (3 on top, 2 on bottom) */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full max-w-[500px] mb-8">
               {countries.map((country, idx) => (
-                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded px-3 py-2.5 flex items-center gap-2.5  border-[1.5px] border-black/10 hover:border-black/20 transition-colors cursor-default">
+                <div key={idx} className="bg-white rounded px-3 py-2.5 flex items-center gap-2.5  border border-gray-200 hover:border-gray-300 transition-colors shadow-sm cursor-default">
                   <img src={country.flagUrl} alt={`${country.name} flag`} className="w-[22px] h-auto rounded-[2px] " />
-                  <span className="text-[13px] font-bold text-[#0A1424] whitespace-nowrap">{country.name}</span>
+                  <span className="font-inter text-[13px] font-medium text-[#193147] whitespace-nowrap">{country.name}</span>
                 </div>
               ))}
             </div>
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md font-bold text-[14px] transition-all hover:-translate-y-0.5">
+              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-[#A51318] text-white rounded-md font-satoshi font-bold text-[14px] transition-all hover:-translate-y-0.5">
                 Book Free Counselling Now
                 <ArrowRight size={15} />
               </a>
-              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#0A1424] border border-[#0A1424]/20 rounded-md font-bold text-[14px] hover:bg-white/80 hover:border-[#0A1424]/40 transition-all">
+              <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center flex items-center justify-center gap-2 px-6 py-3 bg-white/50 backdrop-blur-sm text-[#193147] border border-[#193147]/20 rounded-md font-satoshi font-bold text-[14px] hover:bg-white/80 hover:border-[#193147]/40 transition-all">
                 Apply Now
                 <ArrowRight size={15} />
               </a>
@@ -70,7 +70,7 @@ const Hero = () => {
           {/* Right Column: Lead Form Card */}
           <div className="w-full lg:w-[36%] flex justify-center lg:justify-end">
             <div className="w-full max-w-[380px] bg-white rounded-lg  border border-black/10 p-6 sm:p-7">
-              <h3 className="text-lg font-medium text-[#0A1424] mb-5">
+              <h3 className="font-satoshi text-lg font-bold text-[#193147] mb-5">
                 Get one on one Free Counselling
               </h3>
 
@@ -89,7 +89,7 @@ const Hero = () => {
                     type="text" 
                     required
                     placeholder="Full Name *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
+                    className="font-inter font-medium w-full bg-[#f8fafc] border border-transparent text-[#193147] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#A51318] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
                 
@@ -98,7 +98,7 @@ const Hero = () => {
                     type="email" 
                     required
                     placeholder="Email Address *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
+                    className="font-inter font-medium w-full bg-[#f8fafc] border border-transparent text-[#193147] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#A51318] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
 
@@ -107,12 +107,12 @@ const Hero = () => {
                     type="tel" 
                     required
                     placeholder="Mobile Number *" 
-                    className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all placeholder-gray-400"
+                    className="font-inter font-medium w-full bg-[#f8fafc] border border-transparent text-[#193147] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#A51318] focus:bg-white transition-all placeholder-gray-400"
                   />
                 </div>
                 
                 <div>
-                  <select required className="w-full bg-[#f8fafc] border border-transparent text-[#0A1424] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#D00012] focus:bg-white transition-all cursor-pointer appearance-none">
+                  <select required className="font-inter font-medium w-full bg-[#f8fafc] border border-transparent text-[#193147] text-[14px] rounded px-4 py-2.5 focus:outline-none focus:border-[#A51318] focus:bg-white transition-all cursor-pointer appearance-none">
                     <option value="">Select MBBS Abroad Country *</option>
                     <option value="russia">Russia</option>
                     <option value="georgia">Georgia</option>
@@ -124,7 +124,7 @@ const Hero = () => {
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-md py-3 font-bold text-[14px] mt-2 transition-all hover:-translate-y-0.5"
+                  className="font-satoshi w-full bg-[#A51318] text-white rounded-md py-3 font-bold text-[14px] mt-2 transition-all hover:-translate-y-0.5"
                 >
                   Book Free Counselling
                 </button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 const Footer = () => {
   const handleSubmit = (e) => {
@@ -17,14 +17,14 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-[#0A1424] text-white pt-16 pb-0 relative overflow-hidden font-sans border-t border-gray-800">
+    <footer id="contact" className="bg-black text-white pt-16 pb-0 relative overflow-hidden font-sans border-t border-gray-900">
       <div className="container mx-auto px-4 md:px-8 max-w-[1300px] mb-12">
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-10">
           
           {/* Brand & Contact Col */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 mb-8 md:mb-0">
-            <a href="#home" className="flex items-center group mb-6 inline-flex overflow-hidden rounded-lg shadow-[0_4px_20px_rgba(208,0,18,0.15)] ring-1 ring-white/10 transition-transform hover:-translate-y-1">
-              <img src={logo} alt="Eduway India Logo" className="h-[60px] lg:h-[70px] w-auto object-cover" />
+            <a href="#home" className="flex items-center group mb-6 inline-flex transition-transform hover:-translate-y-1">
+              <img src={logo} alt="Eduway India Logo" className="h-auto w-[160px] sm:w-[200px] lg:w-[220px] object-contain bg-white rounded-xl p-3 shadow-md" />
             </a>
             <p className="text-gray-300 text-[13px] leading-relaxed mb-6 font-medium">
               Established in 2021, Eduway India has helped over 5000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
@@ -42,13 +42,13 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-2">
-              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#B00010] to-[#E00018] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
+              <a href="#" className="w-8 h-8 bg-[#A51318] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="https://www.instagram.com/eduway.consultancy" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gradient-to-r from-[#B00010] to-[#E00018] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
+              <a href="https://www.instagram.com/eduway.consultancy" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-[#A51318] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </a>
-              <a href="#" className="w-8 h-8 bg-gradient-to-r from-[#B00010] to-[#E00018] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
+              <a href="#" className="w-8 h-8 bg-[#A51318] rounded-md flex items-center justify-center text-white hover:from-[#B00010] hover:to-[#2563EB] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
               </a>
             </div>
@@ -77,18 +77,18 @@ const Footer = () => {
             <h4 className="text-[16px] font-bold mb-6 text-white tracking-wide">Contact Us Completely Free</h4>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row gap-4">
-                <input type="text" required placeholder="Name*" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#D00012]" />
-                <input type="tel" required placeholder="Mobile Number*" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#D00012]" />
+                <input type="text" required placeholder="Name*" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#A51318]" />
+                <input type="tel" required placeholder="Mobile Number*" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#A51318]" />
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <input type="email" placeholder="Email" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#D00012]" />
-                <input type="text" placeholder="NEET Score" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#D00012]" />
+                <input type="email" placeholder="Email" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#A51318]" />
+                <input type="text" placeholder="NEET Score" className="w-full sm:w-1/2 bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#A51318]" />
               </div>
-              <input type="text" placeholder="City" className="w-full bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#D00012]" />
-              <textarea placeholder="Message" rows="3" className="w-full bg-white text-gray-900 text-[13px] px-4 py-3 rounded resize-none focus:outline-none focus:ring-2 focus:ring-[#D00012]"></textarea>
+              <input type="text" placeholder="City" className="w-full bg-white text-gray-900 text-[13px] px-4 py-2.5 rounded focus:outline-none focus:ring-2 focus:ring-[#A51318]" />
+              <textarea placeholder="Message" rows="3" className="w-full bg-white text-gray-900 text-[13px] px-4 py-3 rounded resize-none focus:outline-none focus:ring-2 focus:ring-[#A51318]"></textarea>
               <button 
                 type="submit" 
-                className="w-full text-white font-bold py-3 text-[13px] uppercase tracking-wider rounded transition-colors mt-1 bg-gradient-to-r from-[#B00010] to-[#E00018] hover:from-[#B00010] hover:to-[#2563EB]"
+                className="w-full text-white font-bold py-3 text-[13px] uppercase tracking-wider rounded transition-colors mt-1 bg-[#A51318] hover:from-[#B00010] hover:to-[#2563EB]"
               >
                 SUBMIT
               </button>
@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#0b1228] py-5 border-t border-gray-800">
+      <div className="bg-[#0A0A0A] py-5 border-t border-gray-900">
         <div className="container mx-auto px-4 md:px-8 max-w-[1300px] flex flex-col md:flex-row justify-center items-center text-center">
           <p className="text-gray-400 font-medium text-[13px]">
             &copy; {new Date().getFullYear()} Eduway India. All Rights Reserved.

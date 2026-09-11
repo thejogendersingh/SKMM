@@ -40,7 +40,7 @@ const FAQ = () => {
     <section id="faqs" className="py-10 md:py-14 bg-[#f0f5fa] border-t border-gray-100">
       <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
         <div className="text-center mb-14">
-          <span className="font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
+          <span className="font-bold tracking-widest text-[14px] uppercase mb-3 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-[#A51318]">
             FAQ
           </span>
           <h2 className="section-title">
@@ -55,18 +55,18 @@ const FAQ = () => {
           {faqs.map((faq, idx) => (
             <div 
               key={idx} 
-              className={`bg-white rounded-lg border overflow-hidden transition-all duration-300 ${openIdx === idx ? 'border-[#D00012] ' : 'border-slate-200 hover:border-[#D00012]/50 '}`}
+              className={`bg-white rounded-lg border overflow-hidden transition-all duration-300 ${openIdx === idx ? 'border-[#A51318] ' : 'border-slate-200 hover:border-[#A51318]/50 '}`}
             >
               <button 
                 onClick={() => setOpenIdx(openIdx === idx ? -1 : idx)}
                 className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
               >
-                <span className={`font-medium text-[15px] transition-colors ${openIdx === idx ? 'text-[#0A1424]' : 'text-gray-800'}`}>
+                <span className={`font-medium text-[15px] transition-colors ${openIdx === idx ? 'text-[#193147]' : 'text-gray-800'}`}>
                   {faq.q}
                 </span>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${openIdx === idx ? 'bg-[#D00012]/10' : 'bg-gray-100'}`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${openIdx === idx ? 'bg-[#A51318]/10' : 'bg-gray-100'}`}>
                   <ChevronDown 
-                    className={`transition-transform duration-300 ${openIdx === idx ? 'rotate-180 text-[#D00012]' : 'text-gray-500'}`} 
+                    className={`transition-transform duration-300 ${openIdx === idx ? 'rotate-180 text-[#A51318]' : 'text-gray-500'}`} 
                     size={18} 
                   />
                 </div>
@@ -90,9 +90,9 @@ const FAQ = () => {
           ))}
         </div>
         
-        <div className="mt-12 md:mt-14 bg-[#0A1424] rounded-2xl p-5 md:px-10 md:py-6 flex flex-col md:flex-row items-center justify-between gap-5  relative overflow-hidden w-full max-w-[1050px] mx-auto border border-slate-700/50">
+        <div className="mt-12 md:mt-14 bg-[#193147] rounded-2xl p-5 md:px-10 md:py-6 flex flex-col md:flex-row items-center justify-between gap-5  relative overflow-hidden w-full max-w-[1050px] mx-auto border border-slate-700/50">
           {/* Subtle background decoration */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#D00012]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#A51318]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
           
           <div className="relative z-10 text-center md:text-left flex-1">
             <h3 className="text-white text-[18px] md:text-[20px] font-semibold mb-1.5">Still have questions about studying abroad?</h3>
@@ -100,7 +100,7 @@ const FAQ = () => {
           </div>
           
           <div className="relative z-10 shrink-0 w-full md:w-auto">
-            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-[#B00010] to-[#E00018] text-white px-8 py-3.5 md:py-3.5 rounded-lg font-medium text-[14px] md:text-[15px] hover:-translate-y-0.5 transition-all  ">
+            <a href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full md:w-auto bg-[#A51318] text-white px-8 py-3.5 md:py-3.5 rounded-lg font-medium text-[14px] md:text-[15px] hover:-translate-y-0.5 transition-all  ">
               Contact Our Counselling Team
             </a>
           </div>

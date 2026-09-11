@@ -1,10 +1,10 @@
 import React from 'react';
 import { IndianRupee, Clock, GraduationCap, ArrowRight, ArrowUpRight, Banknote } from 'lucide-react';
-import imgRussia from '../assets/Kremlin Moscow.jpg';
-import imgKazakhstan from '../assets/Astana,Kazakistan.jpg';
-import imgGeorgia from '../assets/Terry College Of Business _ University of Georgia.jpg';
-import imgUzbekistan from '../assets/samarkand, uzbekistan.jpg';
-import imgKyrgyzstan from '../assets/Kyrgyzstan - Victory Square, Bishkek.jpg';
+import imgRussia from '../assets/Kremlin Moscow.webp';
+import imgKazakhstan from '../assets/Astana,Kazakistan.webp';
+import imgGeorgia from '../assets/Terry College Of Business _ University of Georgia.webp';
+import imgUzbekistan from '../assets/samarkand, uzbekistan.webp';
+import imgKyrgyzstan from '../assets/Kyrgyzstan - Victory Square, Bishkek.webp';
 
 const Destinations = () => {
   const destinations = [
@@ -89,7 +89,7 @@ const Destinations = () => {
       name: "More Destinations",
       subtitle: "Expanding Horizons",
       badge: "Coming Soon",
-      badgeColor: "bg-[#0A1424]",
+      badgeColor: "bg-[#193147]",
       desc: "We are constantly partnering with top medical universities globally.",
       fees: "TBA",
       duration: "Various",
@@ -107,7 +107,7 @@ const Destinations = () => {
         
         {/* Header Section */}
         <div className="text-center mb-10 md:mb-12">
-          <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
+          <p className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 text-transparent bg-clip-text bg-[#A51318]">
             STUDY DESTINATIONS
           </p>
           <h2 className="section-title">
@@ -214,7 +214,7 @@ const Destinations = () => {
                   className={`w-full py-3.5 rounded-lg font-bold text-[15px] flex items-center justify-between px-5 transition-all
                     ${dest.isComingSoon 
                       ? 'bg-gray-100 text-gray-500 cursor-default' 
-                      : 'bg-[#0A1424] text-white hover:bg-[#0A1424]  #121935]/20'
+                      : 'bg-[#193147] text-white hover:bg-[#193147]  #121935]/20'
                     }
                   `}
                 >
@@ -228,7 +228,7 @@ const Destinations = () => {
         </div>
 
         {/* Footer Note Banner */}
-        <div className="mt-12 relative overflow-hidden rounded-2xl  border border-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 w-full bg-[#0A1424]">
+        <div className="mt-12 relative overflow-hidden rounded-2xl  border border-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 w-full bg-[#193147]">
           {/* Background Image / Overlay */}
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
           
@@ -246,7 +246,7 @@ const Destinations = () => {
           </div>
           <a 
             href="https://wa.me/919672854110?text=Hello%20Eduway India%20Consultancy,%20I%20want%20to%20know%20more%20about%20MBBS%20admission." target="_blank" rel="noopener noreferrer" 
-            className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#B00010] to-[#E00018] text-white rounded-lg font-bold text-[15px]  hover:-translate-y-1 transition-all  uppercase tracking-wide text-center"
+            className="relative z-10 shrink-0 w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#A51318] text-white rounded-lg font-bold text-[15px]  hover:-translate-y-1 transition-all  uppercase tracking-wide text-center"
           >
             Get Free Counselling
           </a>

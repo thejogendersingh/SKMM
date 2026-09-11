@@ -20,7 +20,7 @@ const Contact = () => {
     <section id="contact" className="py-10 md:py-14 bg-primaryNavy relative border-t border-highlightBlue/20">
       <div className="container mx-auto px-4 max-w-[1440px] relative z-10">
         <div className="text-center mb-14">
-          <span className="font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
+          <span className="font-extrabold tracking-widest text-[11px] uppercase mb-2 block text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-[#A51318]">
             GET IN TOUCH
           </span>
           <h2 className="section-title text-white">

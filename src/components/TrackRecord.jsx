@@ -42,15 +42,15 @@ const TrackRecord = () => {
   ];
 
   return (
-    <section className="relative z-20 font-sans border-b border-gray-200 bg-white pt-4">
+    <section className="relative z-20 border-b border-gray-200 bg-white pt-4">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1440px] relative z-10">
         
         <div className="text-center max-w-5xl mx-auto pt-4 lg:pt-8 mb-4 md:mb-6 px-4">
-          <span className="font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">Our Track Record</span>
-          <h2 className="section-title">
+          <span className="font-satoshi font-bold tracking-widest uppercase text-[12px] sm:text-[13px] text-transparent bg-clip-text bg-[#A51318]">Our Track Record</span>
+          <h2 className="section-title font-satoshi font-extrabold">
             A Legacy of Excellence in Global Medical Education
           </h2>
-          <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed w-full mx-auto">
+          <p className="font-inter font-medium text-[14px] md:text-[16px] text-gray-600 leading-relaxed w-full mx-auto">
             Guiding over 5000 aspiring students to top medical universities worldwide with trust, transparency, and a proven legacy of success.
           </p>
         </div>
@@ -72,9 +72,9 @@ const TrackRecord = () => {
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:-translate-y-1.5 group-hover:scale-110 group- ${stat.iconBg}`}>
                     {React.cloneElement(stat.icon, { size: 20 })}
                   </div>
-                  <h3 className="text-[26px] md:text-[28px] font-medium text-gray-900 mb-1.5 tracking-tight transition-colors duration-300">{stat.number}</h3>
-                  <h4 className="text-[14px] md:text-[15px] font-semibold text-gray-800 mb-1 leading-tight">{stat.title}</h4>
-                  <p className="text-[12px] md:text-[13px] text-gray-500 font-normal leading-relaxed">{stat.subtitle}</p>
+                  <h3 className="font-satoshi text-[26px] md:text-[28px] font-bold text-gray-900 mb-1.5 tracking-tight transition-colors duration-300">{stat.number}</h3>
+                  <h4 className="font-inter text-[14px] md:text-[15px] font-semibold text-gray-800 mb-1 leading-tight">{stat.title}</h4>
+                  <p className="font-inter text-[12px] md:text-[13px] text-gray-500 font-medium leading-relaxed">{stat.subtitle}</p>
                 </div>
               </div>
             ))}

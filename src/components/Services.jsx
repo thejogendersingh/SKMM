@@ -40,7 +40,7 @@ const Services = () => {
         
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-12">
-          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-gradient-to-r from-[#B00010] to-[#E00018]">
+          <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-widest mb-2 block text-transparent bg-clip-text bg-[#A51318]">
             WHAT WE DO
           </span>
           <h2 className="section-title">
@@ -65,13 +65,13 @@ const Services = () => {
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
                 className="bg-white p-6 md:p-8 rounded-xl  border border-gray-100  transition- duration-300 relative overflow-hidden group"
               >
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#B00010] to-[#E00018] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#A51318] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#B00010] to-[#E00018] flex items-center justify-center ">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#A51318] to-[#A51318] flex items-center justify-center ">
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#D00012] transition-colors">{service.title}</h3>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#A51318] transition-colors">{service.title}</h3>
                     <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
                       {service.desc}
                     </p>
@@ -92,13 +92,13 @@ const Services = () => {
                 transition={{ delay: idx * 0.1 + 0.2, duration: 0.5 }}
                 className="bg-white p-6 md:p-8 rounded-xl  border border-gray-100  transition- duration-300 relative overflow-hidden group"
               >
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#B00010] to-[#E00018] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#A51318] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#B00010] to-[#E00018] flex items-center justify-center ">
+                  <div className="w-14 h-14 shrink-0 rounded-lg bg-gradient-to-br from-[#A51318] to-[#A51318] flex items-center justify-center ">
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#D00012] transition-colors">{service.title}</h3>
+                    <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-[#A51318] transition-colors">{service.title}</h3>
                     <p className="text-[14.5px] text-gray-600 leading-relaxed text-justify">
                       {service.desc}
                     </p>
@@ -113,7 +113,7 @@ const Services = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="bg-gradient-to-br from-[#B00010] to-[#E00018] p-8 rounded-xl  text-white relative overflow-hidden mt-auto"
+              className="bg-gradient-to-br from-[#A51318] to-[#A51318] p-8 rounded-xl  text-white relative overflow-hidden mt-auto"
             >
               <div className="absolute -right-6 -top-6 text-white/10">
                 <CheckCircle2 size={120} strokeWidth={1} />

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Trophy, MapPin, Building, Banknote, GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
-import imgRussia from '../assets/Kremlin Moscow.jpg';
-import imgKazakhstan from '../assets/Astana,Kazakistan.jpg';
-import imgGeorgia from '../assets/Terry College Of Business _ University of Georgia.jpg';
-import imgUzbekistan from '../assets/samarkand, uzbekistan.jpg';
-import imgKyrgyzstan from '../assets/Kyrgyzstan - Victory Square, Bishkek.jpg';
+import imgRussia from '../assets/Kremlin Moscow.webp';
+import imgKazakhstan from '../assets/Astana,Kazakistan.webp';
+import imgGeorgia from '../assets/Terry College Of Business _ University of Georgia.webp';
+import imgUzbekistan from '../assets/samarkand, uzbekistan.webp';
+import imgKyrgyzstan from '../assets/Kyrgyzstan - Victory Square, Bishkek.webp';
 
 const countryImages = {
   Russia: imgRussia,
