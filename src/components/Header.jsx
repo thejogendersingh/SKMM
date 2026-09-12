@@ -19,12 +19,12 @@ const Header = () => {
       <header className="sticky top-0 w-full z-[100] bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)]">
         
         {/* ================= DESKTOP HEADER (lg and up) ================= */}
-        <div className="hidden lg:flex mx-auto max-w-[1440px] h-[105px] relative">
+        <div className="hidden lg:flex mx-auto max-w-[1440px] h-[130px] relative">
           
           {/* LEFT: LOGO */}
-          <div className="w-[280px] h-full flex items-center justify-center bg-white z-20 shrink-0">
-            <a href="#home" className="h-full flex items-center justify-center py-2 px-4 w-full">
-              <img src={logo} alt="Eduway India Logo" className="h-auto w-[230px] object-contain" />
+          <div className="w-[240px] h-full flex items-center justify-center bg-white z-20 shrink-0">
+            <a href="#home" className="h-full flex items-center justify-center py-2 px-2 w-full">
+              <img src={logo} alt="Eduway India Logo" className="max-h-[120px] w-auto object-contain scale-[1.15]" />
             </a>
           </div>
 
@@ -34,7 +34,7 @@ const Header = () => {
             {/* TIER 1: TOP BAR */}
             <div 
               className="flex h-[50px] bg-[#021333] text-white items-center justify-between px-8 w-full"
-              style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 40px 100%)', marginLeft: '-20px', paddingLeft: '60px' }}
+              style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 45px 100%)', marginLeft: '10px', paddingLeft: '80px' }}
             >
               {/* Social Icons */}
               <div className="flex items-center gap-2 pr-6">
@@ -82,9 +82,9 @@ const Header = () => {
             </div>
 
             {/* TIER 2: MAIN NAVIGATION */}
-            <div className="flex-1 flex items-center justify-end lg:justify-between px-4 lg:px-8">
+            <div className="flex-1 flex items-center justify-between lg:justify-between px-4 lg:px-8">
               
-              <nav className="flex items-center gap-6 xl:gap-8 ml-6">
+              <nav className="flex items-center gap-10 xl:gap-14 ml-6">
                 {navLinks.map((link) => (
                   <a 
                     key={link.name} 
@@ -120,9 +120,9 @@ const Header = () => {
           </div>
           
           {/* Mobile Main Bar */}
-          <div className="flex items-center justify-between px-4 h-[75px] bg-white border-b border-gray-100">
+          <div className="flex items-center justify-between px-4 h-[85px] bg-white border-b border-gray-100">
             <a href="#home" className="flex items-center h-full py-2">
-              <img src={logo} alt="Eduway India Logo" className="h-auto w-[150px] object-contain" />
+              <img src={logo} alt="Eduway India Logo" className="max-h-[70px] w-auto object-contain scale-[1.15]" />
             </a>
             <div className="flex items-center gap-3">
               <a href="https://wa.me/919672854110" className="bg-[#A51318] hover:bg-[#8B0F13] transition-colors text-white px-4 py-2 rounded font-medium text-[13px] shadow-sm">Apply</a>
@@ -139,9 +139,9 @@ const Header = () => {
         ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
       `}>
         {/* Overlay Header */}
-        <div className="flex items-center justify-between p-4 px-6 border-b border-gray-100 h-[80px]">
+        <div className="flex items-center justify-between p-4 px-6 border-b border-gray-100 h-[85px]">
           <div className="flex items-center h-full py-2">
-            <img src={logo} alt="Eduway India" className="h-auto w-[160px] object-contain" />
+            <img src={logo} alt="Eduway India" className="max-h-[70px] w-auto object-contain scale-[1.15]" />
           </div>
           <button 
             className="text-[#021333] bg-gray-50 hover:bg-gray-100 p-2.5 rounded-full transition-colors"

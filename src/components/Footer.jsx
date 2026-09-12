@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Brand & Contact Col */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 mb-8 md:mb-0">
             <a href="#home" className="flex items-center group mb-6 inline-flex transition-transform hover:-translate-y-1">
-              <img src={logo} alt="Eduway India Logo" className="h-auto w-[160px] sm:w-[200px] lg:w-[220px] object-contain bg-white rounded-xl p-3 shadow-md" />
+              <img src={logo} alt="Eduway India Logo" className="max-h-[120px] sm:max-h-[150px] w-auto object-contain bg-white rounded-xl p-2.5 sm:p-3 shadow-md" />
             </a>
             <p className="text-gray-300 text-[13px] leading-relaxed mb-6 font-medium">
               Established in 2021, Eduway India has helped over 5000 aspiring medical students take the first step toward their dream of becoming successful doctors through trusted MBBS abroad guidance and support.
